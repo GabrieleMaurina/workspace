@@ -1,0 +1,20 @@
+Tot:107
+People:9
+Each:11.8889
+
+Andrea              Paid:37        Balance:25.11     Expenses:10 5 22 
+Camilla             Paid:1         Balance:-10.89    Expenses:1 
+Erica               Paid:3         Balance:-8.89     Expenses:3 
+Gabriele            Paid:5         Balance:-6.89     Expenses:5 
+Sara                Paid:30        Balance:18.11     Expenses:17 13 
+Luca                Paid:1         Balance:-10.89    Expenses:1 
+Mario               Paid:0         Balance:-11.89    Expenses:
+Giada               Paid:0         Balance:-11.89    Expenses:
+Alfonso             Paid:30        Balance:18.11     Expenses:13 17 
+
+Camilla             Owes:     Alfonso             10.89     
+Erica               Owes:     Andrea              1.67      Alfonso             7.22      
+Gabriele            Owes:     Andrea              0.67      Sara                6.22      
+Luca                Owes:     Andrea              10.89     
+Mario               Owes:     Andrea              11.89     
+Giada               Owes:     Sara                11.89     

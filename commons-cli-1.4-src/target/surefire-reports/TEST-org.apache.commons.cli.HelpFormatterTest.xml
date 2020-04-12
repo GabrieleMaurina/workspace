@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.cli.HelpFormatterTest" time="0.003" tests="25" errors="0" skipped="0" failures="10">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="org.ekstazi.agent.AgentLoaderInitialize" value=""/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.232-b09"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/gabriele/Documents/workspace/git/misc/commons-cli-1.4-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/gabriele/Documents/workspace/git/misc/commons-cli-1.4-src"/>
+    <property name="java.runtime.version" value="1.8.0_232-8u232-b09-0ubuntu1~18.04.1-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="ekstazi.argline.internal" value="force.all=false,force.failing=false,root.dir=file:/home/gabriele/Documents/workspace/git/misc/commons-cli-1.4-src/.ekstazi/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="ekstazi.excludes.internal" value="[]"/>
+    <property name="Ekstazi1228025092" value="seen"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-74-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/gabriele"/>
+    <property name="user.timezone" value="Europe/Rome"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="gabriele"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher ekstazi:ekstazi"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_232"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testUsageWithLongOptSeparator" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;...te [--age=&lt;arg&gt;] [-f[] &lt;arg&gt;] [-s &lt;SIZE&gt;]&gt; but was:&lt;...te [--age=&lt;arg&gt;] [-f[asdf] &lt;arg&gt;] [-s &lt;SIZE&gt;]&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: expected:<...te [--age=<arg>] [-f[] <arg>] [-s <SIZE>]> but was:<...te [--age=<arg>] [-f[asdf] <arg>] [-s <SIZE>]>
+	at org.apache.commons.cli.HelpFormatterTest.testUsageWithLongOptSeparator(HelpFormatterTest.java:608)
+]]></failure>
+  </testcase>
+  <testcase name="testRenderWrappedTextSingleLine" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testIndentedHeaderAndFooter" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testPrintSortedUsageWithNullComparator" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;usage: app [-c[] [-b] [-a]]&#10;&gt; but was:&lt;usage: app [-c[asdf] [-basdf] [-aasdf]]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<usage: app [-c[] [-b] [-a]]
+> but was:<usage: app [-c[asdf] [-basdf] [-aasdf]]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintSortedUsageWithNullComparator(HelpFormatterTest.java:317)
+]]></failure>
+  </testcase>
+  <testcase name="testAccessors" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testRtrim" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testPrintRequiredOptionGroupUsage" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testHelpWithLongOptSeparator" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;...arg&gt;    the age&#10;  -f[ &lt;arg&gt;    ]      the file&#10;  -s,...&gt; but was:&lt;...arg&gt;    the age&#10;  -f[asdf &lt;arg&gt;]      the file&#10;  -s,...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<...arg>    the age
+  -f[ <arg>    ]      the file
+  -s,...> but was:<...arg>    the age
+  -f[asdf <arg>]      the file
+  -s,...>
+	at org.apache.commons.cli.HelpFormatterTest.testHelpWithLongOptSeparator(HelpFormatterTest.java:583)
+]]></failure>
+  </testcase>
+  <testcase name="testRenderWrappedTextSingleLinePadded" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testRenderWrappedTextMultiLine" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testPrintUsage" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;usage: app [-a[] [-b] [-c]]&#10;&gt; but was:&lt;usage: app [-a[asdf] [-basdf] [-casdf]]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<usage: app [-a[] [-b] [-c]]
+> but was:<usage: app [-a[asdf] [-basdf] [-casdf]]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintUsage(HelpFormatterTest.java:275)
+]]></failure>
+  </testcase>
+  <testcase name="testPrintSortedUsage" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;usage: app [-c[] [-b] [-a]]&#10;&gt; but was:&lt;usage: app [-c[asdf] [-basdf] [-aasdf]]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<usage: app [-c[] [-b] [-a]]
+> but was:<usage: app [-c[asdf] [-basdf] [-aasdf]]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintSortedUsage(HelpFormatterTest.java:300)
+]]></failure>
+  </testcase>
+  <testcase name="testPrintHelpWithEmptySyntax" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testPrintOptions" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="simple non-wrapped option expected:&lt; -a[]   aaaa aaaa aaaa aa...&gt; but was:&lt; -a[asdf]   aaaa aaaa aaaa aa...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: simple non-wrapped option expected:< -a[]   aaaa aaaa aaaa aa...> but was:< -a[asdf]   aaaa aaaa aaaa aa...>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintOptions(HelpFormatterTest.java:174)
+]]></failure>
+  </testcase>
+  <testcase name="testAutomaticUsage" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="simple auto usage expected:&lt;usage: app [-a[]]&gt; but was:&lt;usage: app [-a[asdf]]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: simple auto usage expected:&lt;usage: app [-a[]]&gt; but was:&lt;usage: app [-a[asdf]]&gt;	at org.apache.commons.cli.HelpFormatterTest.testAutomaticUsage(HelpFormatterTest.java:246)</failure>
+  </testcase>
+  <testcase name="testDefaultArgName" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testHeaderStartingWithLineSeparator" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testRenderWrappedTextWordCut" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testOptionWithoutShortFormat" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;usage: foobar [-a[] [--bbb] [-c]&#10;  -a,--aaa  aaaaaaa&#10;     --bbb  bbbbbbb&#10;  -c        ccccccc]&#10;&gt; but was:&lt;usage: foobar [-a[asdf] [-casdf] [-nullasdf]&#10;  -aasdf,--aaa     aaaaaaa&#10;  -casdf           ccccccc&#10;  -nullasdf,--bbb  bbbbbbb]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<usage: foobar [-a[] [--bbb] [-c]
+  -a,--aaa  aaaaaaa
+     --bbb  bbbbbbb
+  -c        ccccccc]
+> but was:<usage: foobar [-a[asdf] [-casdf] [-nullasdf]
+  -aasdf,--aaa     aaaaaaa
+  -casdf           ccccccc
+  -nullasdf,--bbb  bbbbbbb]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testOptionWithoutShortFormat(HelpFormatterTest.java:486)
+]]></failure>
+  </testcase>
+  <testcase name="testRenderWrappedTextMultiLinePadded" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testPrintOptionGroupUsage" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testPrintOptionWithEmptyArgNameUsage" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;usage: app -f[]&#10;&gt; but was:&lt;usage: app -f[asdf]&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<usage: app -f[]
+> but was:<usage: app -f[asdf]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintOptionWithEmptyArgNameUsage(HelpFormatterTest.java:374)
+]]></failure>
+  </testcase>
+  <testcase name="testRenderWrappedTextSingleLinePadded2" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+  <testcase name="testOptionWithoutShortFormat2" classname="org.apache.commons.cli.HelpFormatterTest" time="0">
+    <failure message="expected:&lt;...[--config &lt;arg&gt;] [-h[] [-l &lt;arg&gt;] [-n] [-r &lt;arg&gt;]&#10;       [-s &lt;arg&gt;] [-t] [-v]&#10;header&#10;  -a,--age &lt;arg&gt;      Age (in days) of cache item before being recomputed&#10;     --config &lt;arg&gt;   Use the specified configuration file&#10;  -h,--help           print this message&#10;  -l,--limit &lt;arg&gt;    Set time limit for execution, in mintues&#10;  -n,--new            Create NLT cache entries only for new items&#10;  -r,--results &lt;arg&gt;  Number of results per item&#10;  -s,--server &lt;arg&gt;   The NLT server address&#10;  -t,--tracker        Create NLT cache entries only for tracker items&#10;  -v,--version    ]    print version in...&gt; but was:&lt;...[--config &lt;arg&gt;] [-h[asdf] [-l &lt;arg&gt;] [-nasdf] [-r&#10;       &lt;arg&gt;] [-s &lt;arg&gt;] [-tasdf] [-vasdf]&#10;header&#10;  -a,--age &lt;arg&gt;      Age (in days) of cache item before being recomputed&#10;     --config &lt;arg&gt;   Use the specified configuration file&#10;  -hasdf,--help       print this message&#10;  -l,--limit &lt;arg&gt;    Set time limit for execution, in mintues&#10;  -nasdf,--new        Create NLT cache entries only for new items&#10;  -r,--results &lt;arg&gt;  Number of results per item&#10;  -s,--server &lt;arg&gt;   The NLT server address&#10;  -tasdf,--tracker    Create NLT cache entries only for tracker items&#10;  -vasdf,--version]    print version in...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<...[--config <arg>] [-h[] [-l <arg>] [-n] [-r <arg>]
+       [-s <arg>] [-t] [-v]
+header
+  -a,--age <arg>      Age (in days) of cache item before being recomputed
+     --config <arg>   Use the specified configuration file
+  -h,--help           print this message
+  -l,--limit <arg>    Set time limit for execution, in mintues
+  -n,--new            Create NLT cache entries only for new items
+  -r,--results <arg>  Number of results per item
+  -s,--server <arg>   The NLT server address
+  -t,--tracker        Create NLT cache entries only for tracker items
+  -v,--version    ]    print version in...> but was:<...[--config <arg>] [-h[asdf] [-l <arg>] [-nasdf] [-r
+       <arg>] [-s <arg>] [-tasdf] [-vasdf]
+header
+  -a,--age <arg>      Age (in days) of cache item before being recomputed
+     --config <arg>   Use the specified configuration file
+  -hasdf,--help       print this message
+  -l,--limit <arg>    Set time limit for execution, in mintues
+  -nasdf,--new        Create NLT cache entries only for new items
+  -r,--results <arg>  Number of results per item
+  -s,--server <arg>   The NLT server address
+  -tasdf,--tracker    Create NLT cache entries only for tracker items
+  -vasdf,--version]    print version in...>
+	at org.apache.commons.cli.HelpFormatterTest.testOptionWithoutShortFormat2(HelpFormatterTest.java:549)
+]]></failure>
+  </testcase>
+  <testcase name="testFindWrapPos" classname="org.apache.commons.cli.HelpFormatterTest" time="0"/>
+</testsuite>

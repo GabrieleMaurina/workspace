@@ -1,0 +1,108 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.ApplicationTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 0.233 sec <<< FAILURE! - in org.apache.commons.cli.ApplicationTest
+testAnt(org.apache.commons.cli.ApplicationTest)  Time elapsed: 0.028 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -buildfile
+	at org.apache.commons.cli.ApplicationTest.testAnt(ApplicationTest.java:97)
+
+testMan(org.apache.commons.cli.ApplicationTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<...ection] page ...
+ -7[,--ascii                display ASCII translation or
+                           certain latin1 chars.
+ -a,--all                  find all matching manual pages.
+ -c,--catman               used by catman to reformat out of
+                           date cat pages.
+ -d,--debug                emit debugging messages.
+ -D,--default              reset all options to their
+                           default values.
+ -e,--extension            limit search to extension type
+                           'extension'.
+ -f,--whatis               equivalent to whatis.
+ -h,--help                 show this usage message.
+ -k,--apropos              equivalent to apropos.
+ -l,--local-file           interpret 'page' argument(s) as
+                           local filename(s)
+ -L,--locale <arg>         define the locale for this
+                           particular man search.
+ -M,--manpath <arg>        set search path for manual pages
+                           to 'path'.
+ -m,--systems <arg>        search for man pages from other
+                           unix system(s).
+ -P,--pager <arg>          use program 'pager' to display
+                           output.
+ -p,--preprocessor <arg>   string indicates which
+                           preprocessor to run.
+                           e - [n]eqn  p - pic     t - tbl
+                           g - grap    r - refer   v -
+                           vgrind
+ -r,--prompt <arg>         provide 'less' pager with prompt.
+ -S,--sections <arg>       use colon separated section list.
+ -t,--troff                use troff format pages.
+ -T,--troff-device <arg>   use groff with selected device.
+ -u,--update               force a cache consistency check.
+ -V,--version              show version.
+ -w,--location             print physical location of man
+                           page(s).
+ -Z,--ditroff              use groff with selected] device.
+> but was:<...ection] page ...
+ -7[asdf,--ascii                display ASCII translation or
+                               certain latin1 chars.
+ -aasdf,--all                  find all matching manual
+                               pages.
+ -casdf,--catman               used by catman to reformat
+                               out of date cat pages.
+ -dasdf,--debug                emit debugging messages.
+ -Dasdf,--default              reset all options to their
+                               default values.
+ -easdf,--extension            limit search to extension
+                               type 'extension'.
+ -fasdf,--whatis               equivalent to whatis.
+ -hasdf,--help                 show this usage message.
+ -kasdf,--apropos              equivalent to apropos.
+ -lasdf,--local-file           interpret 'page' argument(s)
+                               as local filename(s)
+ -Lasdf,--locale <arg>         define the locale for this
+                               particular man search.
+ -Masdf,--manpath <arg>        set search path for manual
+                               pages to 'path'.
+ -masdf,--systems <arg>        search for man pages from
+                               other unix system(s).
+ -Pasdf,--pager <arg>          use program 'pager' to
+                               display output.
+ -pasdf,--preprocessor <arg>   string indicates which
+                               preprocessor to run.
+                               e - [n]eqn  p - pic     t -
+                               tbl
+                               g - grap    r - refer   v -
+                               vgrind
+ -rasdf,--prompt <arg>         provide 'less' pager with
+                               prompt.
+ -Sasdf,--sections <arg>       use colon separated section
+                               list.
+ -tasdf,--troff                use troff format pages.
+ -Tasdf,--troff-device <arg>   use groff with selected
+                               device.
+ -uasdf,--update               force a cache consistency
+                               check.
+ -Vasdf,--version              show version.
+ -wasdf,--location             print physical location of
+                               man page(s).
+ -Zasdf,--ditroff              use groff with selected
+                              ] device.
+>
+	at org.apache.commons.cli.ApplicationTest.testMan(ApplicationTest.java:229)
+
+testNLT(org.apache.commons.cli.ApplicationTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -v
+	at org.apache.commons.cli.ApplicationTest.testNLT(ApplicationTest.java:332)
+
+testLs(org.apache.commons.cli.ApplicationTest)  Time elapsed: 0.001 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ApplicationTest.testLs(ApplicationTest.java:63)
+
+testGroovy(org.apache.commons.cli.ApplicationTest)  Time elapsed: 0.002 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.commons.cli.ApplicationTest.testGroovy(ApplicationTest.java:177)
+

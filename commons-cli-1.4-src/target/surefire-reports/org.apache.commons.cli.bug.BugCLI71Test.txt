@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.bug.BugCLI71Test
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 4, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.bug.BugCLI71Test
+testBasic(org.apache.commons.cli.bug.BugCLI71Test)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -a
+	at org.apache.commons.cli.bug.BugCLI71Test.testBasic(BugCLI71Test.java:56)
+
+testLackOfError(org.apache.commons.cli.bug.BugCLI71Test)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -k
+	at org.apache.commons.cli.bug.BugCLI71Test.testLackOfError(BugCLI71Test.java:75)
+
+testMistakenArgument(org.apache.commons.cli.bug.BugCLI71Test)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -a
+	at org.apache.commons.cli.bug.BugCLI71Test.testMistakenArgument(BugCLI71Test.java:64)
+
+testGetsDefaultIfOptional(org.apache.commons.cli.bug.BugCLI71Test)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.bug.BugCLI71Test.testGetsDefaultIfOptional(BugCLI71Test.java:85)
+

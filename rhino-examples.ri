@@ -1,0 +1,22 @@
+a = 3
+b = 'string'
+c = 3.1415
+
+arr = 46, 23, 12, 4, 6
+dict = a = 3, b = 4, c = 5
+
+obj1
+    attr1 = 'asdf'
+    attr2 = 'qwer'
+
+obj2 = attr1 = 1, attr2 = 'hello'
+    attr3 = 'world', 1, 2, 3
+    4
+    5
+    
+print(obj1.attr1) #asdf
+print(obj2.attr1) #1
+print(obj2[1]) #2
+
+fun1 = arg1, arg2
+    return arg1 + arg2

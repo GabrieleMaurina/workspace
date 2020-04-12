@@ -1,0 +1,52 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.ValueTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 12, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.ValueTest
+testShortOptionalArgValues(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testLongOptionalArgValue(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testShortOptionalArgNoValue(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testLongWithArg(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testLongOptionalNArgValues(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testShortWithArg(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testLongOptionalArgValues(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testShortOptionalNArgValues(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testLongNoArg(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testShortNoArg(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testLongOptionalNoValue(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+
+testShortOptionalArgValue(org.apache.commons.cli.ValueTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.ValueTest.setUp(ValueTest.java:56)
+

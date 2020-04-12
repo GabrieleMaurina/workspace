@@ -1,0 +1,93 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.HelpFormatterTest
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in org.apache.commons.cli.HelpFormatterTest
+testUsageWithLongOptSeparator(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...te [--age=<arg>] [-f[] <arg>] [-s <SIZE>]> but was:<...te [--age=<arg>] [-f[asdf] <arg>] [-s <SIZE>]>
+	at org.apache.commons.cli.HelpFormatterTest.testUsageWithLongOptSeparator(HelpFormatterTest.java:608)
+
+testPrintSortedUsageWithNullComparator(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<usage: app [-c[] [-b] [-a]]
+> but was:<usage: app [-c[asdf] [-basdf] [-aasdf]]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintSortedUsageWithNullComparator(HelpFormatterTest.java:317)
+
+testHelpWithLongOptSeparator(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<...arg>    the age
+  -f[ <arg>    ]      the file
+  -s,...> but was:<...arg>    the age
+  -f[asdf <arg>]      the file
+  -s,...>
+	at org.apache.commons.cli.HelpFormatterTest.testHelpWithLongOptSeparator(HelpFormatterTest.java:583)
+
+testPrintUsage(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<usage: app [-a[] [-b] [-c]]
+> but was:<usage: app [-a[asdf] [-basdf] [-casdf]]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintUsage(HelpFormatterTest.java:275)
+
+testPrintSortedUsage(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<usage: app [-c[] [-b] [-a]]
+> but was:<usage: app [-c[asdf] [-basdf] [-aasdf]]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintSortedUsage(HelpFormatterTest.java:300)
+
+testPrintOptions(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: simple non-wrapped option expected:< -a[]   aaaa aaaa aaaa aa...> but was:< -a[asdf]   aaaa aaaa aaaa aa...>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintOptions(HelpFormatterTest.java:174)
+
+testAutomaticUsage(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: simple auto usage expected:<usage: app [-a[]]> but was:<usage: app [-a[asdf]]>
+	at org.apache.commons.cli.HelpFormatterTest.testAutomaticUsage(HelpFormatterTest.java:246)
+
+testOptionWithoutShortFormat(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<usage: foobar [-a[] [--bbb] [-c]
+  -a,--aaa  aaaaaaa
+     --bbb  bbbbbbb
+  -c        ccccccc]
+> but was:<usage: foobar [-a[asdf] [-casdf] [-nullasdf]
+  -aasdf,--aaa     aaaaaaa
+  -casdf           ccccccc
+  -nullasdf,--bbb  bbbbbbb]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testOptionWithoutShortFormat(HelpFormatterTest.java:486)
+
+testPrintOptionWithEmptyArgNameUsage(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<usage: app -f[]
+> but was:<usage: app -f[asdf]
+>
+	at org.apache.commons.cli.HelpFormatterTest.testPrintOptionWithEmptyArgNameUsage(HelpFormatterTest.java:374)
+
+testOptionWithoutShortFormat2(org.apache.commons.cli.HelpFormatterTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<...[--config <arg>] [-h[] [-l <arg>] [-n] [-r <arg>]
+       [-s <arg>] [-t] [-v]
+header
+  -a,--age <arg>      Age (in days) of cache item before being recomputed
+     --config <arg>   Use the specified configuration file
+  -h,--help           print this message
+  -l,--limit <arg>    Set time limit for execution, in mintues
+  -n,--new            Create NLT cache entries only for new items
+  -r,--results <arg>  Number of results per item
+  -s,--server <arg>   The NLT server address
+  -t,--tracker        Create NLT cache entries only for tracker items
+  -v,--version    ]    print version in...> but was:<...[--config <arg>] [-h[asdf] [-l <arg>] [-nasdf] [-r
+       <arg>] [-s <arg>] [-tasdf] [-vasdf]
+header
+  -a,--age <arg>      Age (in days) of cache item before being recomputed
+     --config <arg>   Use the specified configuration file
+  -hasdf,--help       print this message
+  -l,--limit <arg>    Set time limit for execution, in mintues
+  -nasdf,--new        Create NLT cache entries only for new items
+  -r,--results <arg>  Number of results per item
+  -s,--server <arg>   The NLT server address
+  -tasdf,--tracker    Create NLT cache entries only for tracker items
+  -vasdf,--version]    print version in...>
+	at org.apache.commons.cli.HelpFormatterTest.testOptionWithoutShortFormat2(HelpFormatterTest.java:549)
+

@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.ArgumentIsOptionTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.ArgumentIsOptionTest
+testOptionWithArgument(org.apache.commons.cli.ArgumentIsOptionTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -attr
+	at org.apache.commons.cli.ArgumentIsOptionTest.testOptionWithArgument(ArgumentIsOptionTest.java:64)
+
+testOptionAndOptionWithArgument(org.apache.commons.cli.ArgumentIsOptionTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -p
+	at org.apache.commons.cli.ArgumentIsOptionTest.testOptionAndOptionWithArgument(ArgumentIsOptionTest.java:49)
+
+testOption(org.apache.commons.cli.ArgumentIsOptionTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -p
+	at org.apache.commons.cli.ArgumentIsOptionTest.testOption(ArgumentIsOptionTest.java:79)
+

@@ -1,0 +1,106 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.BasicParserTest
+-------------------------------------------------------------------------------
+Tests run: 58, Failures: 0, Errors: 34, Skipped: 24, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.BasicParserTest
+testSimpleLong(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testSimpleShort(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testMissingRequiredOption(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testReuseOptionsTwice(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testMissingRequiredGroup(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testOptionGroupLong(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testMissingRequiredOptions(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testShortWithUnexpectedArgument(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testPropertyOverrideValues(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testStopAtNonOptionLong(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testNegativeArgument(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testStopAtUnexpectedArg(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testOptionGroup(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testLongWithoutEqualDoubleDash(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testPropertyOptionSingularValue(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testPropertyOptionMultipleValues(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testMissingArg(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testPropertyOptionFlags(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testPropertyOptionGroup(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testMultipleWithLong(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testUnrecognizedOption(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testPropertyOptionUnexpected(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testSingleDash(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testWithRequiredOption(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testUnlimitedArgs(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testPropertyOptionRequired(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testOptionAndRequiredOption(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testLongWithUnexpectedArgument1(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testLongWithUnexpectedArgument2(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testStopAtNonOptionShort(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testMultiple(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testArgumentStartingWithHyphen(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testDoubleDash1(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testStopAtExpectedArg(org.apache.commons.cli.BasicParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+

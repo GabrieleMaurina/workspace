@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.OptionsTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 6, Errors: 2, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.OptionsTest
+testMissingOptionsException(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<... required options: f[, x]> but was:<... required options: f[asdf, xasdf]>
+	at org.apache.commons.cli.OptionsTest.testMissingOptionsException(OptionsTest.java:137)
+
+testGetMatchingOpts(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<1> but was:<0>
+	at org.apache.commons.cli.OptionsTest.testGetMatchingOpts(OptionsTest.java:182)
+
+testLong(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.commons.cli.OptionsTest.testLong(OptionsTest.java:63)
+
+testHelpOptions(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Everything in all should be in help
+	at org.apache.commons.cli.OptionsTest.testHelpOptions(OptionsTest.java:104)
+
+testMissingOptionException(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<...g required option: f[]> but was:<...g required option: f[asdf]>
+	at org.apache.commons.cli.OptionsTest.testMissingOptionException(OptionsTest.java:120)
+
+testDuplicateSimple(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.OptionsTest.testDuplicateSimple(OptionsTest.java:52)
+
+testDuplicateLong(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.OptionsTest.testDuplicateLong(OptionsTest.java:73)
+
+testSimple(org.apache.commons.cli.OptionsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError
+	at org.apache.commons.cli.OptionsTest.testSimple(OptionsTest.java:41)
+

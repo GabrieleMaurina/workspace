@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.apache.commons.cli.bug.BugCLI162Test" time="0.002" tests="4" errors="0" skipped="0" failures="4">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="org.ekstazi.agent.AgentLoaderInitialize" value=""/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.232-b09"/>
+    <property name="java.vm.vendor" value="Private Build"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/gabriele/Documents/workspace/git/misc/commons-cli-1.4-src"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/gabriele/Documents/workspace/git/misc/commons-cli-1.4-src"/>
+    <property name="java.runtime.version" value="1.8.0_232-8u232-b09-0ubuntu1~18.04.1-b09"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="ekstazi.argline.internal" value="force.all=false,force.failing=false,root.dir=file:/home/gabriele/Documents/workspace/git/misc/commons-cli-1.4-src/.ekstazi/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="ekstazi.excludes.internal" value="[]"/>
+    <property name="Ekstazi1228025092" value="seen"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-74-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/gabriele"/>
+    <property name="user.timezone" value="Europe/Rome"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="gabriele"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher ekstazi:ekstazi"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_232"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="java.vendor" value="Private Build"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testInfiniteLoop" classname="org.apache.commons.cli.bug.BugCLI162Test" time="0">
+    <failure message="expected:&lt;usage: app&#10; -h[,--help   This is&#10;             a&#10;             looooon&#10;             g&#10;             descrip&#10;             ti]on&#10;&gt; but was:&lt;usage: app&#10; -h[asdf,--help&#10;                 Thi&#10;                 s&#10;                 is&#10;                 a&#10;                 loo&#10;                 ooo&#10;                 ng&#10;                 des&#10;                 cri&#10;                 pti&#10;                 ]on&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<usage: app
+ -h[,--help   This is
+             a
+             looooon
+             g
+             descrip
+             ti]on
+> but was:<usage: app
+ -h[asdf,--help
+                 Thi
+                 s
+                 is
+                 a
+                 loo
+                 ooo
+                 ng
+                 des
+                 cri
+                 pti
+                 ]on
+>
+	at org.apache.commons.cli.bug.BugCLI162Test.testInfiniteLoop(BugCLI162Test.java:63)
+]]></failure>
+  </testcase>
+  <testcase name="testLongLineChunkingIndentIgnored" classname="org.apache.commons.cli.bug.BugCLI162Test" time="0">
+    <failure message="Long arguments did not split as expected expected:&lt;...CLI162Test&#10;Header&#10;-x[],--extralongarg&#10; Thi...&gt; but was:&lt;...CLI162Test&#10;Header&#10;-x[asdf],--extralongarg&#10; Thi...&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+Long arguments did not split as expected expected:<...CLI162Test
+Header
+-x[],--extralongarg
+ Thi...> but was:<...CLI162Test
+Header
+-x[asdf],--extralongarg
+ Thi...>
+	at org.apache.commons.cli.bug.BugCLI162Test.testLongLineChunkingIndentIgnored(BugCLI162Test.java:360)
+]]></failure>
+  </testcase>
+  <testcase name="testLongLineChunking" classname="org.apache.commons.cli.bug.BugCLI162Test" time="0">
+    <failure message="Long arguments did not split as expected expected:&lt;...CLI162Test&#10;Header&#10;-x[,--extralongarg     This&#10;                      description&#10;                      has&#10;                      ReallyLongVal&#10;                      uesThatAreLon&#10;                      gerThanTheWid&#10;                      thOfTheColumn&#10;                      s and also&#10;                      other&#10;                      ReallyLongVal&#10;                      uesThatAreHug&#10;                      erAndBiggerTh&#10;                      anTheWidthOfT&#10;                      heColumnsBob,&#10;                     ] yes.&#10;Footer&#10;&gt; but was:&lt;...CLI162Test&#10;Header&#10;-x[asdf,--extralongarg     This&#10;                          descripti&#10;                          on has&#10;                          ReallyLon&#10;                          gValuesTh&#10;                          atAreLong&#10;                          erThanThe&#10;                          WidthOfTh&#10;                          eColumns&#10;                          and also&#10;                          other&#10;                          ReallyLon&#10;                          gValuesTh&#10;                          atAreHuge&#10;                          rAndBigge&#10;                          rThanTheW&#10;                          idthOfThe&#10;                          ColumnsBo&#10;                          b,] yes.&#10;Footer&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+Long arguments did not split as expected expected:<...CLI162Test
+Header
+-x[,--extralongarg     This
+                      description
+                      has
+                      ReallyLongVal
+                      uesThatAreLon
+                      gerThanTheWid
+                      thOfTheColumn
+                      s and also
+                      other
+                      ReallyLongVal
+                      uesThatAreHug
+                      erAndBiggerTh
+                      anTheWidthOfT
+                      heColumnsBob,
+                     ] yes.
+Footer
+> but was:<...CLI162Test
+Header
+-x[asdf,--extralongarg     This
+                          descripti
+                          on has
+                          ReallyLon
+                          gValuesTh
+                          atAreLong
+                          erThanThe
+                          WidthOfTh
+                          eColumns
+                          and also
+                          other
+                          ReallyLon
+                          gValuesTh
+                          atAreHuge
+                          rAndBigge
+                          rThanTheW
+                          idthOfThe
+                          ColumnsBo
+                          b,] yes.
+Footer
+>
+	at org.apache.commons.cli.bug.BugCLI162Test.testLongLineChunking(BugCLI162Test.java:342)
+]]></failure>
+  </testcase>
+  <testcase name="testPrintHelpLongLines" classname="org.apache.commons.cli.bug.BugCLI162Test" time="0">
+    <failure message="expected:&lt;...ug.BugCLI162Test&#10; -2[,--jdbc2sfmd &lt;arg&gt;        Converts the JDBC file in the first argument&#10;                             to an SMFD file specified in the second&#10;                             argument.&#10; -a,--paramNames &lt;arg&gt;       Parameter XML names; default names are&#10;                             param1, param2, etc. Example: -a &quot;pname1&#10;                             pname2&quot;&#10; -b,--jdbc &lt;arg&gt;             Writes a JDBC binding node file for the given&#10;                             SQL&#10; -c,--url &lt;arg&gt;              Connection URL&#10; -d,--driver &lt;arg&gt;           JDBC driver class name&#10; -e,--description &lt;arg&gt;      SFMD description. A default description is&#10;                             used if omited. Example: -e &quot;Runs such and&#10;                             such&quot;&#10; -f,--sfmd &lt;arg&gt;             Writes a SFMD file for the given SQL&#10; -g,--printTiming            Prints timing information&#10; -h,--help                   Prints help and quits&#10; -i,--interactive            Runs in interactive mode, reading and writing&#10;                             from the console, &apos;go&apos; or &apos;/&apos; sends a&#10;                             statement&#10; -j,--node &lt;arg&gt;             Writes a JDBC node file for the given SQL&#10;                             (internal debugging)&#10; -l,--columnNames &lt;arg&gt;      Column XML names; default names column&#10;                             labels. Example: -l &quot;cname1 cname2&quot;&#10; -m,--printMetaData          Prints metadata information&#10; -n,--info                   Prints driver information and properties. If&#10;                             -c is not specified, all drivers on the&#10;                             classpath are displayed.&#10; -o,--paramModes &lt;arg&gt;       Parameters modes (1=IN, 2=INOUT, 4=OUT,&#10;                             0=Unknown). -o and -O are mutually exclusive.&#10;                             Example for 2 parameters, OUT and IN: -o &quot;4&#10;                             1&quot;&#10; -O,--paramModeNames &lt;arg&gt;   Parameters mode names (IN, INOUT, OUT,&#10;                             Unknown). -o and -O are mutually exclusive.&#10;                             Example for 2 parameters, OUT and IN: -O &quot;OUT&#10;                             IN&quot;&#10; -p,--password &lt;arg&gt;         The database password for the user specified&#10;                             with the -u option. You can obfuscate the&#10;                             password with&#10;                             org.mortbay.jetty.security.Password, see&#10;                             http://docs.codehaus.org/display/JETTY/Securi&#10;                             ng+Passwords&#10; -s,--sql &lt;arg&gt;              Runs SQL or {call stored_procedure(?, ?)} or&#10;                             {?=call function(?, ?)}&#10; -t,--printStack             Prints stack traces on errors&#10;    --trim &lt;arg&gt;             Trims leading and trailing spaces from all&#10;                             column values. Column XML names can be&#10;                             optionally specified to set which columns to&#10;                             trim.&#10; -u,--user &lt;arg&gt;             A database user name&#10; -w,--outfile &lt;arg&gt;          Writes the SQL output to the given file&#10; -y,--paramTypes &lt;arg&gt;       Parameter types from java.sql.Types. -y and&#10;                             -Y are mutually exclusive. Example: -y &quot;-10&#10;                             12&quot;&#10; -Y,--paramTypeNames &lt;arg&gt;   Parameter java.sql.Types names. -y and -Y are&#10;                             mutually exclusive. Example: -Y &quot;CURSOR&#10;                            ] VARCHAR&quot;&#10;&gt; but was:&lt;...ug.BugCLI162Test&#10; -2[asdf,--jdbc2sfmd &lt;arg&gt;        Converts the JDBC file in the first&#10;                                 argument to an SMFD file specified in the&#10;                                 second argument.&#10; -aasdf,--paramNames &lt;arg&gt;       Parameter XML names; default names are&#10;                                 param1, param2, etc. Example: -a &quot;pname1&#10;                                 pname2&quot;&#10; -basdf,--jdbc &lt;arg&gt;             Writes a JDBC binding node file for the&#10;                                 given SQL&#10; -casdf,--url &lt;arg&gt;              Connection URL&#10; -dasdf,--driver &lt;arg&gt;           JDBC driver class name&#10; -easdf,--description &lt;arg&gt;      SFMD description. A default description&#10;                                 is used if omited. Example: -e &quot;Runs such&#10;                                 and such&quot;&#10; -fasdf,--sfmd &lt;arg&gt;             Writes a SFMD file for the given SQL&#10; -gasdf,--printTiming            Prints timing information&#10; -hasdf,--help                   Prints help and quits&#10; -iasdf,--interactive            Runs in interactive mode, reading and&#10;                                 writing from the console, &apos;go&apos; or &apos;/&apos;&#10;                                 sends a statement&#10; -jasdf,--node &lt;arg&gt;             Writes a JDBC node file for the given SQL&#10;                                 (internal debugging)&#10; -lasdf,--columnNames &lt;arg&gt;      Column XML names; default names column&#10;                                 labels. Example: -l &quot;cname1 cname2&quot;&#10; -masdf,--printMetaData          Prints metadata information&#10; -nasdf,--info                   Prints driver information and properties.&#10;                                 If -c is not specified, all drivers on&#10;                                 the classpath are displayed.&#10; -nullasdf,--trim &lt;arg&gt;          Trims leading and trailing spaces from&#10;                                 all column values. Column XML names can&#10;                                 be optionally specified to set which&#10;                                 columns to trim.&#10; -oasdf,--paramModes &lt;arg&gt;       Parameters modes (1=IN, 2=INOUT, 4=OUT,&#10;                                 0=Unknown). -o and -O are mutually&#10;                                 exclusive. Example for 2 parameters, OUT&#10;                                 and IN: -o &quot;4 1&quot;&#10; -Oasdf,--paramModeNames &lt;arg&gt;   Parameters mode names (IN, INOUT, OUT,&#10;                                 Unknown). -o and -O are mutually&#10;                                 exclusive. Example for 2 parameters, OUT&#10;                                 and IN: -O &quot;OUT IN&quot;&#10; -pasdf,--password &lt;arg&gt;         The database password for the user&#10;                                 specified with the -u option. You can&#10;                                 obfuscate the password with&#10;                                 org.mortbay.jetty.security.Password, see&#10;                                 http://docs.codehaus.org/display/JETTY/Se&#10;                                 curing+Passwords&#10; -sasdf,--sql &lt;arg&gt;              Runs SQL or {call stored_procedure(?, ?)}&#10;                                 or {?=call function(?, ?)}&#10; -tasdf,--printStack             Prints stack traces on errors&#10; -uasdf,--user &lt;arg&gt;             A database user name&#10; -wasdf,--outfile &lt;arg&gt;          Writes the SQL output to the given file&#10; -yasdf,--paramTypes &lt;arg&gt;       Parameter types from java.sql.Types. -y&#10;                                 and -Y are mutually exclusive. Example:&#10;                                 -y &quot;-10 12&quot;&#10; -Yasdf,--paramTypeNames &lt;arg&gt;   Parameter java.sql.Types names. -y and -Y&#10;                                 are mutually exclusive. Example: -Y&#10;                                 &quot;CURSOR] VARCHAR&quot;&#10;&gt;" type="org.junit.ComparisonFailure"><![CDATA[org.junit.ComparisonFailure: 
+expected:<...ug.BugCLI162Test
+ -2[,--jdbc2sfmd <arg>        Converts the JDBC file in the first argument
+                             to an SMFD file specified in the second
+                             argument.
+ -a,--paramNames <arg>       Parameter XML names; default names are
+                             param1, param2, etc. Example: -a "pname1
+                             pname2"
+ -b,--jdbc <arg>             Writes a JDBC binding node file for the given
+                             SQL
+ -c,--url <arg>              Connection URL
+ -d,--driver <arg>           JDBC driver class name
+ -e,--description <arg>      SFMD description. A default description is
+                             used if omited. Example: -e "Runs such and
+                             such"
+ -f,--sfmd <arg>             Writes a SFMD file for the given SQL
+ -g,--printTiming            Prints timing information
+ -h,--help                   Prints help and quits
+ -i,--interactive            Runs in interactive mode, reading and writing
+                             from the console, 'go' or '/' sends a
+                             statement
+ -j,--node <arg>             Writes a JDBC node file for the given SQL
+                             (internal debugging)
+ -l,--columnNames <arg>      Column XML names; default names column
+                             labels. Example: -l "cname1 cname2"
+ -m,--printMetaData          Prints metadata information
+ -n,--info                   Prints driver information and properties. If
+                             -c is not specified, all drivers on the
+                             classpath are displayed.
+ -o,--paramModes <arg>       Parameters modes (1=IN, 2=INOUT, 4=OUT,
+                             0=Unknown). -o and -O are mutually exclusive.
+                             Example for 2 parameters, OUT and IN: -o "4
+                             1"
+ -O,--paramModeNames <arg>   Parameters mode names (IN, INOUT, OUT,
+                             Unknown). -o and -O are mutually exclusive.
+                             Example for 2 parameters, OUT and IN: -O "OUT
+                             IN"
+ -p,--password <arg>         The database password for the user specified
+                             with the -u option. You can obfuscate the
+                             password with
+                             org.mortbay.jetty.security.Password, see
+                             http://docs.codehaus.org/display/JETTY/Securi
+                             ng+Passwords
+ -s,--sql <arg>              Runs SQL or {call stored_procedure(?, ?)} or
+                             {?=call function(?, ?)}
+ -t,--printStack             Prints stack traces on errors
+    --trim <arg>             Trims leading and trailing spaces from all
+                             column values. Column XML names can be
+                             optionally specified to set which columns to
+                             trim.
+ -u,--user <arg>             A database user name
+ -w,--outfile <arg>          Writes the SQL output to the given file
+ -y,--paramTypes <arg>       Parameter types from java.sql.Types. -y and
+                             -Y are mutually exclusive. Example: -y "-10
+                             12"
+ -Y,--paramTypeNames <arg>   Parameter java.sql.Types names. -y and -Y are
+                             mutually exclusive. Example: -Y "CURSOR
+                            ] VARCHAR"
+> but was:<...ug.BugCLI162Test
+ -2[asdf,--jdbc2sfmd <arg>        Converts the JDBC file in the first
+                                 argument to an SMFD file specified in the
+                                 second argument.
+ -aasdf,--paramNames <arg>       Parameter XML names; default names are
+                                 param1, param2, etc. Example: -a "pname1
+                                 pname2"
+ -basdf,--jdbc <arg>             Writes a JDBC binding node file for the
+                                 given SQL
+ -casdf,--url <arg>              Connection URL
+ -dasdf,--driver <arg>           JDBC driver class name
+ -easdf,--description <arg>      SFMD description. A default description
+                                 is used if omited. Example: -e "Runs such
+                                 and such"
+ -fasdf,--sfmd <arg>             Writes a SFMD file for the given SQL
+ -gasdf,--printTiming            Prints timing information
+ -hasdf,--help                   Prints help and quits
+ -iasdf,--interactive            Runs in interactive mode, reading and
+                                 writing from the console, 'go' or '/'
+                                 sends a statement
+ -jasdf,--node <arg>             Writes a JDBC node file for the given SQL
+                                 (internal debugging)
+ -lasdf,--columnNames <arg>      Column XML names; default names column
+                                 labels. Example: -l "cname1 cname2"
+ -masdf,--printMetaData          Prints metadata information
+ -nasdf,--info                   Prints driver information and properties.
+                                 If -c is not specified, all drivers on
+                                 the classpath are displayed.
+ -nullasdf,--trim <arg>          Trims leading and trailing spaces from
+                                 all column values. Column XML names can
+                                 be optionally specified to set which
+                                 columns to trim.
+ -oasdf,--paramModes <arg>       Parameters modes (1=IN, 2=INOUT, 4=OUT,
+                                 0=Unknown). -o and -O are mutually
+                                 exclusive. Example for 2 parameters, OUT
+                                 and IN: -o "4 1"
+ -Oasdf,--paramModeNames <arg>   Parameters mode names (IN, INOUT, OUT,
+                                 Unknown). -o and -O are mutually
+                                 exclusive. Example for 2 parameters, OUT
+                                 and IN: -O "OUT IN"
+ -pasdf,--password <arg>         The database password for the user
+                                 specified with the -u option. You can
+                                 obfuscate the password with
+                                 org.mortbay.jetty.security.Password, see
+                                 http://docs.codehaus.org/display/JETTY/Se
+                                 curing+Passwords
+ -sasdf,--sql <arg>              Runs SQL or {call stored_procedure(?, ?)}
+                                 or {?=call function(?, ?)}
+ -tasdf,--printStack             Prints stack traces on errors
+ -uasdf,--user <arg>             A database user name
+ -wasdf,--outfile <arg>          Writes the SQL output to the given file
+ -yasdf,--paramTypes <arg>       Parameter types from java.sql.Types. -y
+                                 and -Y are mutually exclusive. Example:
+                                 -y "-10 12"
+ -Yasdf,--paramTypeNames <arg>   Parameter java.sql.Types names. -y and -Y
+                                 are mutually exclusive. Example: -Y
+                                 "CURSOR] VARCHAR"
+>
+	at org.apache.commons.cli.bug.BugCLI162Test.testPrintHelpLongLines(BugCLI162Test.java:310)
+]]></failure>
+  </testcase>
+</testsuite>

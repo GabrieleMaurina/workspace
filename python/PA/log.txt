@@ -1,0 +1,26 @@
+empty 2 5
+f1 2 3
+f1 2 3
+f1 2 5
+f1 3 2
+f1 2 5
+f1 2 3
+empty 2 5
+pow 2 3
+pow 2 5
+pow 3 2
+empty 2 5
+pow 2 3
+pow 2 5
+pow 3 2
+empty 2 5
+pow 2 3
+pow 2 5
+pow 3 2
+empty 2 5
+m <__main__.Test object at 0x7fbabd7e2400> 1 2 3
+pow 2 3
+pow 2 5
+pow 3 2
+empty 2 5
+m <__main__.Test object at 0x7f541ef963c8> 1 2 3

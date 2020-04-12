@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.PatternOptionBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.PatternOptionBuilderTest
+testSimplePattern(org.apache.commons.cli.PatternOptionBuilderTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: flag a expected:<foo[]> but was:<foo[qwer36]>
+	at org.apache.commons.cli.PatternOptionBuilderTest.testSimplePattern(PatternOptionBuilderTest.java:49)
+
+testExistingFilePattern(org.apache.commons.cli.PatternOptionBuilderTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: f value expected:<test.properties> but was:<null>
+	at org.apache.commons.cli.PatternOptionBuilderTest.testExistingFilePattern(PatternOptionBuilderTest.java:166)
+
+testURLPattern(org.apache.commons.cli.PatternOptionBuilderTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: u value expected:<http://commons.apache.org> but was:<null>
+	at org.apache.commons.cli.PatternOptionBuilderTest.testURLPattern(PatternOptionBuilderTest.java:155)
+
+testClassPattern(org.apache.commons.cli.PatternOptionBuilderTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: c value expected:<class java.util.Calendar> but was:<null>
+	at org.apache.commons.cli.PatternOptionBuilderTest.testClassPattern(PatternOptionBuilderTest.java:132)
+
+testNumberPattern(org.apache.commons.cli.PatternOptionBuilderTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.PatternOptionBuilderTest.testNumberPattern(PatternOptionBuilderTest.java:116)
+
+testUntypedPattern(org.apache.commons.cli.PatternOptionBuilderTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -abc
+	at org.apache.commons.cli.PatternOptionBuilderTest.testUntypedPattern(PatternOptionBuilderTest.java:99)
+
+testObjectPattern(org.apache.commons.cli.PatternOptionBuilderTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: o value expected:<> but was:<null>
+	at org.apache.commons.cli.PatternOptionBuilderTest.testObjectPattern(PatternOptionBuilderTest.java:143)
+

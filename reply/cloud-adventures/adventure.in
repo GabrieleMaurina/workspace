@@ -1,0 +1,38 @@
+3 3 3 5
+cpu memory disk
+Italy Germany Spain
+Amazon 4
+Milan
+60 0.32 10 5 1
+50 75 52
+London
+100 0.8 8 8 8
+75 60 35
+Madrid
+10 6 3 5 10
+60 80 85
+Moscow
+10 0.1 1 10 5
+50 25 70
+Microsoft 2
+Madrid
+75 0.70 15 50 100
+90 49 10
+Dublin
+25 1.5 12 8 24
+80 45 30
+Google 3
+Berlin
+30 1.5 40 100 500
+35 10 42
+Dublin
+15 1 25 25 0
+48 25 35
+Sidney
+5000 2.5 10 10 3
+100 170 130
+10000 Italy 1000 0 0
+1000 Spain 100 60 0
+255000 Italy 20 0 555
+30000 Italy 250 300 780
+5000000 Germany 5000 300 10000

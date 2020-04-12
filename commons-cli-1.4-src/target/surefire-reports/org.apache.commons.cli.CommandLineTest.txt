@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.CommandLineTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.CommandLineTest
+testGetParsedOptionValue(org.apache.commons.cli.CommandLineTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -i
+	at org.apache.commons.cli.CommandLineTest.testGetParsedOptionValue(CommandLineTest.java:74)
+
+testGetOptionProperties(org.apache.commons.cli.CommandLineTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -Dparam1=value1
+	at org.apache.commons.cli.CommandLineTest.testGetOptionProperties(CommandLineTest.java:40)
+

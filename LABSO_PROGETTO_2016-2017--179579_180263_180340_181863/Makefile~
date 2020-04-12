@@ -1,0 +1,25 @@
+.PHONY: test assets
+help:
+	@echo "Marco Merlin 180340"
+	@echo "Jhonny Hueller 181863"
+	@echo "Gabriele Maurina 180263"
+	@echo "Michele Armellini 179579\n"
+	@echo "Descrizione Breve\n"
+	@echo "Regole utilizzabili:\n\t\t\t - help \n\t\t\t - clean \n\t\t\t - build"
+
+clean:
+	@rm -rf build
+	@rm -rf assets
+
+build:	clean	src/pmanager.c src/pchild.c src/generateTest.c
+	@mkdir build
+	@gcc -o build/pmanager src/pmanager.c
+	@gcc -o build/pchild src/pchild.c
+	@gcc -o build/generateTest src/generateTest.c
+
+assets: build
+	@mkdir assets
+	@./build/generateTest
+
+test: assets
+	@cd build/ && ./pmanager ./assets/test

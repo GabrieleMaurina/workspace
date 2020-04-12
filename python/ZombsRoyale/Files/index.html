@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>Zombs Royale - 100 Player 2D Real-Time Battle Royale</title>
+                        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+
+                            <link rel="stylesheet" href="/asset/app.css?e767e7c" type="text/css">
+                    
+
+            <meta name="description" content="Play ZombsRoyale.io - 100 player 2D real-time massive multiplayer Battle Royale game in your browser, inspired by PUBG/Fortnite.">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zombsroyale">
+        <meta name="og:title" content="ZombsRoyale.io">
+        <meta name="og:description" content="Play ZombsRoyale.io - 100 player 2D real-time massive multiplayer Battle Royale game in your browser, inspired by PUBG/Fortnite.">
+        <meta name="og:image" content="http://zombsroyale.io/asset/image/share-card.png">
+                        <script>
+                window.factorem = {};
+                window.factorem.slotSizes =  [
+                    [[728, 90]],
+                    [[300, 250]],
+                    [[300, 250]],
+                    [[728, 90]],
+                    [[728, 90]],
+                    [[300, 250]],
+                    [[160, 600]],
+                    [[160, 600]],
+                ];
+            </script>
+            <script type="text/javascript" id="factorem" src="//cdm.cursecdn.com/js/zombsroyale/cdmfactorem_min.js?sec=home&misc=1535653300"></script>
+            </head>
+
+    <body class="home">
+            <div class="home-loading">
+        <div class="home-loading-props">
+            <div class="home-loading-tree"></div>
+            <div class="home-loading-tree"></div>
+            <div class="home-loading-tree"></div>
+            <div class="home-loading-player-scar"></div>
+            <div class="home-loading-player-regular"></div>
+        </div>
+        <div class="home-loading-logo"></div>
+        <div class="home-loading-tiers">
+            <span class="tier-common"></span>
+            <span class="tier-uncommon"></span>
+            <span class="tier-rare"></span>
+            <span class="tier-epic"></span>
+            <span class="tier-legendary"></span>
+            <span class="tier-mythic"></span>
+        </div>
+        <div class="home-loading-tip">Tip: Pick up higher quality weapons if you can, they pack more of a punch!</div>
+        <div class="home-loading-help">
+            <div class="help-box">
+                <span class="help-box-images">
+                    <span class="help-box-image help-box-image-left" style="background-image:url('/asset/image/help-one-left.png');"></span>
+                    <span class="help-box-image help-box-image-right" style="background-image:url('/asset/image/help-one-right.png');"></span>
+                </span>
+                <span class="help-box-label">
+                    <p><strong>WASD</strong> or <strong>Arrow Keys</strong> to move</p>
+                    <p><strong>Left Mouse</strong> to fire</p>
+                </span>
+            </div>
+            <div class="help-box">
+                <span class="help-box-images">
+                    <span class="help-box-image help-box-image-left" style="background-image:url('/asset/image/help-two-left.png');"></span>
+                    <span class="help-box-image help-box-image-right" style="background-image:url('/asset/image/help-two-right.png');"></span>
+                </span>
+                <span class="help-box-label">
+                    <p>Break shiny boxes to get loot</p>
+                </span>
+            </div>
+            <div class="help-box">
+                <span class="help-box-images">
+                    <span class="help-box-image help-box-image-left" style="background-image:url('/asset/image/help-three-left.png');"></span>
+                    <span class="help-box-image help-box-image-right" style="background-image:url('/asset/image/help-three-right.png');"></span>
+                </span>
+                <span class="help-box-label">
+                    <p>Press <strong>E</strong> to open doors</p>
+                </span>
+            </div>
+            <div class="help-box">
+                <span class="help-box-images">
+                    <span class="help-box-image help-box-image-left" style="background-image:url('/asset/image/help-four-left.png');"></span>
+                    <span class="help-box-image help-box-image-right" style="background-image:url('/asset/image/help-four-right.png');"></span>
+                </span>
+                <span class="help-box-label">
+                    <p>Press <strong>E</strong> to interact and loot chests</p>
+                </span>
+            </div>
+        </div>
+    </div>
+            <script src="/asset/app.js?e767e7c"></script>
+        <script src="/asset/build/UnityLoader.js?891a3e0"></script>
+    <script>
+        Raven.config('http://2b58b5da0c8c4e8e8f976a081b62e47b@sentry.masternetwork.gg/6', {
+            environment: 'prod',
+            release: '8860410a1126f33570025ba687d23c5ab2d7ac6d',
+            autoBreadcrumbs: false,
+            instrument: false,
+            shouldSendCallback: function(data) {
+                var message = data.exception && data.exception.values.length > 0 ? data.exception.values[0].value : null;
+
+                if (message.indexOf('Cannot enlarge memory arrays') > -1 || message.indexOf('out of memory') > -1) {
+                    setTimeout(function() {
+                        throw new Error('Exhausted available memory limit while running game...');
+                    }, 100);
+
+                    return false;
+                }
+
+                Raven.trackedErrors = 'trackedErrors' in Raven ? Raven.trackedErrors + 1 : 1;
+
+                return Raven.trackedErrors <= 10;
+            },
+            whitelistUrls: [
+                /https?:\/\/(.*)zombsroyale\.io/
+            ]
+        }).install();
+
+        var game = new Game({
+            stage: 'prod',
+            endpoint: 'zombsroyale',
+            userData: false,
+                            buildJsonUrl: '/build/webgl',
+                                });
+
+        game.init(function() {
+            console.log('Ready to launch!');
+        });
+    </script>
+    <script src="//static.xsolla.com/embed/paystation/1.0.7/widget.min.js" async></script>
+                    <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                ga('create', 'UA-115440498-1', 'auto');
+                ga('send', 'pageview');
+            </script>
+            <script>
+                !function(f,b,e,v,n,t,s)
+                {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+                if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+                n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];
+                s.parentNode.insertBefore(t,s)}(window, document,'script',
+                'https://connect.facebook.net/en_US/fbevents.js');
+
+                fbq('init', '231520644073398');
+                fbq('track', 'PageView');
+            </script>
+            <noscript>
+                <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=231520644073398&ev=PageView&noscript=1">
+            </noscript>
+                <div id="cdm-zone-end"></div>
+    </body>
+</html>

@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.bug.BugCLI13Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.bug.BugCLI13Test
+testCLI13(org.apache.commons.cli.bug.BugCLI13Test)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -d
+	at org.apache.commons.cli.bug.BugCLI13Test.testCLI13(BugCLI13Test.java:47)
+

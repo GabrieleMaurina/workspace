@@ -1,0 +1,68 @@
+#include "pchild.h"
+
+
+
+int main (int argc, char** argv) 
+{
+	printf("Mi sono creato ho questo pid: %i\n",getpid());
+	signal(SIG_SPAWN, emptyHandler);
+	signal(SIG_UPDATE, emptyHandler);
+	signal(SIGCHLD, SIG_IGN);
+	initClone();
+	while(1)
+	{
+		//signal(SIG_SPAWN, emptyHandler);
+		//signal(SIG_UPDATE, emptyHandler);
+		//printf("CIAO1 %i %i\n",getpid(),lastSig);
+		
+		//pause();
+		//printf("CIAO2 %i %i\n",getpid(),lastSig);
+		clone();
+		sleep(1);
+		//printf("CIAO3 %i %i\n",getpid(),lastSig);
+	}
+	return 0;
+
+void initClone()
+{
+	lastSig = 0;
+	int fd, messageLen, i;
+	char message [100];
+	sprintf (message, "%d",getpid());
+	messageLen = strlen(message) + 1;
+	do 
+	{
+		fd = open("aPipe", O_WRONLY);
+	} while (fd == -1);
+	write (fd, message, messageLen);
+	close(fd);
+}
+
+void clone()
+{
+	if(lastSig == SIG_SPAWN)
+	{
+		pid_t pid = fork();
+	  	if(pid >= 0)
+		{
+			if(pid == 0)
+			{
+				execve("pchild",NULL,NULL);
+			}
+			else
+			{
+				printf("pid:%i ppid:%i\n", getpid(), pid);
+				lastSig = 0;
+			}
+	  	}
+		else
+		{
+			printf("Errore creazione processo\n");
+		}
+	}
+}
+
+void emptyHandler(int sigNumber)
+{
+	lastSig = sigNumber;
+}

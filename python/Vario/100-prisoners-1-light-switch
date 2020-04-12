@@ -1,0 +1,28 @@
+from random import randrange as r
+
+T = 10
+P = 10
+tot = 0
+
+for i in range(T):
+  print(i)
+  d = 0
+  l = False
+  a = [False] * P
+  while True:
+    p = r(P)
+    if p == d % P:
+      if p == 0:
+        l = True
+      if l == True:
+        a[p] = True
+      if a[p]:
+        l = True
+        if p == P - 1:
+          break
+    else:
+      l = False
+    d += 1
+  tot += d + 1
+y = tot / T / 365
+print(y)

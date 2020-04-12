@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr" class="client-nojs">
+<head>
+<meta charset="UTF-8" />
+<title>US 0995 - Uomini e cose a Vignale</title>
+<meta name="generator" content="MediaWiki 1.25.2" />
+<link rel="ExportRDF" type="application/rdf+xml" title="US 0995" href="/w/index.php?title=Speciale:EsportaRDF/US_0995&amp;xmlmime=rdf" />
+<link rel="alternate" type="application/x-wiki" title="Modifica" href="/w/index.php?title=US_0995&amp;action=edit" />
+<link rel="edit" title="Modifica" href="/w/index.php?title=US_0995&amp;action=edit" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="search" type="application/opensearchdescription+xml" href="/w/opensearch_desc.php" title="Uomini e cose a Vignale (it)" />
+<link rel="EditURI" type="application/rsd+xml" href="http://vignale.openarchaeology.eu/w/api.php?action=rsd" />
+<link rel="alternate" hreflang="x-default" href="/wiki/US_0995" />
+<link rel="copyright" href="http://creativecommons.org/licenses/by-sa/3.0/" />
+<link rel="alternate" type="application/atom+xml" title="Feed Atom di Uomini e cose a Vignale" href="/w/index.php?title=Speciale:UltimeModifiche&amp;feed=atom" />
+<link rel="stylesheet" href="http://vignale.openarchaeology.eu/w/load.php?debug=false&amp;lang=it&amp;modules=ext.smw.style%7Cext.smw.tooltip.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<link rel="stylesheet" href="http://vignale.openarchaeology.eu/w/load.php?debug=false&amp;lang=it&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cmediawiki.sectionAnchor%7Cmediawiki.skinning.interface%7Cmediawiki.ui.button%7Cskins.vector.styles&amp;only=styles&amp;skin=vector&amp;*" />
+<meta name="ResourceLoaderDynamicStyles" content="" />
+<link rel="stylesheet" href="http://vignale.openarchaeology.eu/w/load.php?debug=false&amp;lang=it&amp;modules=site&amp;only=styles&amp;skin=vector&amp;*" />
+<style>a:lang(ar),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}
+/* cache key: vignalewiki-vw_:resourceloader:filter:minify-css:7:314ba3e1357fe81cc8fcfe7b63f037ef */</style>
+<script src="http://vignale.openarchaeology.eu/w/load.php?debug=false&amp;lang=it&amp;modules=startup&amp;only=scripts&amp;skin=vector&amp;*"></script>
+<script>if(window.mw){
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"US_0995","wgTitle":"US 0995","wgCurRevisionId":11781,"wgRevisionId":11781,"wgArticleId":3532,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":"JacopoScoz","wgUserGroups":["*","user","autoconfirmed"],"wgCategories":["Unità stratigrafiche"],"wgBreakFrames":false,"wgPageContentLanguage":"it","wgPageContentModel":"wikitext","wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","gennaio","febbraio","marzo","aprile","maggio","giugno","luglio","agosto","settembre","ottobre","novembre","dicembre"],"wgMonthNamesShort":["","gen","feb","mar","apr","mag","giu","lug","ago","set","ott","nov","dic"],"wgRelevantPageName":"US_0995","wgRelevantArticleId":3532,"wgUserId":121,"wgUserEditCount":81,"wgUserRegistration":1469166191000,"wgUserNewMsgRevisionId":null,"wgIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgWikiEditorEnabledModules":{"toolbar":false,"dialogs":false,"hidesig":true,"preview":false,"publish":false}});
+}</script><script>if(window.mw){
+mw.loader.implement("user.options",function($,jQuery){mw.user.options.set([]);});mw.loader.implement("user.tokens",function($,jQuery){mw.user.tokens.set({"editToken":"ade6614fe7c944fb7e5ad950936398a559fd8d22+\\","patrolToken":"047d2b2055c539359595623cf95fbe6959fd8d22+\\","watchToken":"ef679c36bf571cee90edea00c5db182259fd8d22+\\"});});
+/* cache key: vignalewiki-vw_:resourceloader:filter:minify-js:7:f825db4e5b93ed9dee6312a9a648ebf6 */
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.smw.style","mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.legacy.ajax","skins.vector.js"]);
+}</script>
+		<script>if(window.mw){
+mw.config.set({"srf.options":{"srfgScriptPath":"/w/extensions/SemanticResultFormats","srfVersion":"2.3"}});
+}</script>
+
+<!--[if lt IE 7]><style type="text/css">body{behavior:url("/w/skins/Vector/csshover.min.htc")}</style><![endif]-->
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 ns-subject page-US_0995 skin-vector action-view">
+		<div id="mw-page-base" class="noprint"></div>
+		<div id="mw-head-base" class="noprint"></div>
+		<div id="content" class="mw-body" role="main">
+			<a id="top"></a>
+
+							<div id="siteNotice"><div id="localNotice" lang="it" dir="ltr"></div></div>
+						<div class="mw-indicators">
+</div>
+			<h1 id="firstHeading" class="firstHeading" lang="it">US 0995</h1>
+						<div id="bodyContent" class="mw-body-content">
+									<div id="siteSub">Da Uomini e cose a Vignale.</div>
+								<div id="contentSub"></div>
+												<div id="jump-to-nav" class="mw-jump">
+					Vai a:					<a href="#mw-head">navigazione</a>, 					<a href="#p-search">ricerca</a>
+				</div>
+				<div id="mw-content-text" lang="it" dir="ltr" class="mw-content-ltr"><hr />
+<dl><dt> Sondaggio 37</dt>
+<dd> <a href="/wiki/Sondaggio_37" title="Sondaggio 37">37</a></dd>
+<dt> Data di scavo</dt>
+<dd> 29-09-17</dd>
+<dt> Scavato da</dt>
+<dd> <a href="/w/index.php?title=Jacopo_Scoz,_Camilla_Sorrentino&amp;action=edit&amp;redlink=1" class="new" title="Jacopo Scoz, Camilla Sorrentino (la pagina non esiste)">Jacopo Scoz, Camilla Sorrentino</a></dd></dl>
+<div id="toc" class="toc"><div id="toctitle"><h2>Indice</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Area.2Fsaggio"><span class="tocnumber">1</span> <span class="toctext">Area/saggio</span></a></li>
+<li class="toclevel-1 tocsection-2"><a href="#Descrizione"><span class="tocnumber">2</span> <span class="toctext">Descrizione</span></a></li>
+<li class="toclevel-1 tocsection-3"><a href="#Rapporti_stratigrafici"><span class="tocnumber">3</span> <span class="toctext">Rapporti stratigrafici</span></a></li>
+<li class="toclevel-1 tocsection-4"><a href="#Fotografie"><span class="tocnumber">4</span> <span class="toctext">Fotografie</span></a></li>
+</ul>
+</div>
+
+<h2><span class="mw-headline" id="Area.2Fsaggio">Area/saggio</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=US_0995&amp;action=edit&amp;section=1" title="Modifica la sezione Area/saggio">modifica</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Sondaggio 37
+</p>
+<h2><span class="mw-headline" id="Descrizione">Descrizione</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=US_0995&amp;action=edit&amp;section=2" title="Modifica la sezione Descrizione">modifica</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p>Strato ricco di Malta gialla, con pochi inclusi di grandi dimensioni
+</p>
+<h2><span class="mw-headline" id="Rapporti_stratigrafici">Rapporti stratigrafici</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=US_0995&amp;action=edit&amp;section=3" title="Modifica la sezione Rapporti stratigrafici">modifica</a><span class="mw-editsection-bracket">]</span></span></h2>
+<p><br />
+<b>Uguale a</b>
+</p><p><br />
+<b>Si lega a</b>
+</p><p><br />
+<b>Si appoggia a</b>
+</p><p><br />
+<b>Gli si appoggia</b>
+</p><p><br />
+<b>Copre</b>
+</p><p><a href="/wiki/US_1034" title="US 1034">US 1034</a>
+</p><p><b>Coperto da</b>
+</p><p><a href="/wiki/US_0991" title="US 0991">US 0991</a>
+</p><p><b>Taglia</b>
+</p><p><br />
+<b>Tagliato da</b>
+</p><p><br />
+<b>Riempie</b>
+</p><p><br />
+<b>Riempito da</b>
+</p>
+<h2><span class="mw-headline" id="Fotografie">Fotografie</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=US_0995&amp;action=edit&amp;section=4" title="Modifica la sezione Fotografie">modifica</a><span class="mw-editsection-bracket">]</span></span></h2>
+
+<!-- 
+NewPP limit report
+CPU time usage: 0.036 seconds
+Real time usage: 0.038 seconds
+Preprocessor visited node count: 19/1000000
+Preprocessor generated node count: 58/1000000
+Post‐expand include size: 42/2097152 bytes
+Template argument size: 0/2097152 bytes
+Highest expansion depth: 3/40
+Expensive parser function count: 0/100
+-->
+
+<!-- 
+Transclusion expansion time report (%,ms,calls,template)
+100.00%    0.000      1 - -total
+-->
+
+<!-- Saved in parser cache with key vignalewiki-vw_:pcache:idhash:3532-0!*!0!!it!*!* and timestamp 20171104091802 and revision id 11781
+ -->
+</div>									<div class="printfooter">
+						Estratto da "<a dir="ltr" href="http://vignale.openarchaeology.eu/w/index.php?title=US_0995&amp;oldid=11781">http://vignale.openarchaeology.eu/w/index.php?title=US_0995&amp;oldid=11781</a>"					</div>
+													<div id='catlinks' class='catlinks'><div id="mw-normal-catlinks" class="mw-normal-catlinks"><a href="/wiki/Speciale:Categorie" title="Speciale:Categorie">Categoria</a>: <ul><li><a href="/wiki/Categoria:Unit%C3%A0_stratigrafiche" title="Categoria:Unità stratigrafiche">Unità stratigrafiche</a></li></ul></div></div>												<div class="visualClear"></div>
+							</div>
+		</div>
+		<div id="mw-navigation">
+			<h2>Menu di navigazione</h2>
+
+			<div id="mw-head">
+									<div id="p-personal" role="navigation" class="" aria-labelledby="p-personal-label">
+						<h3 id="p-personal-label">Strumenti personali</h3>
+						<ul>
+							<li id="pt-userpage"><a href="/wiki/Utente:JacopoScoz" class="new" dir="auto" title="La tua pagina utente [.]" accesskey=".">JacopoScoz</a></li><li id="pt-mytalk"><a href="/wiki/Discussioni_utente:JacopoScoz" class="new" title="La tua pagina di discussione [n]" accesskey="n">discussioni</a></li><li id="pt-preferences"><a href="/wiki/Speciale:Preferenze" title="Le tue preferenze">preferenze</a></li><li id="pt-watchlist"><a href="/wiki/Speciale:OsservatiSpeciali" title="La lista delle pagine che stai tenendo sotto osservazione [l]" accesskey="l">osservati speciali</a></li><li id="pt-mycontris"><a href="/wiki/Speciale:Contributi/JacopoScoz" title="La lista dei tuoi contributi [y]" accesskey="y">contributi</a></li><li id="pt-logout"><a href="/w/index.php?title=Speciale:Esci&amp;returnto=US+0995" title="Uscita (logout)">esci</a></li>						</ul>
+					</div>
+									<div id="left-navigation">
+										<div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+						<h3 id="p-namespaces-label">Namespace</h3>
+						<ul>
+															<li  id="ca-nstab-main" class="selected"><span><a href="/wiki/US_0995"  title="Vedi la voce [c]" accesskey="c">Pagina</a></span></li>
+															<li  id="ca-talk" class="new"><span><a href="/w/index.php?title=Discussione:US_0995&amp;action=edit&amp;redlink=1"  title="Vedi le discussioni relative a questa pagina [t]" accesskey="t">Discussione</a></span></li>
+													</ul>
+					</div>
+										<div id="p-variants" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-variants-label">
+												<h3 id="p-variants-label"><span>Varianti</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+															</ul>
+						</div>
+					</div>
+									</div>
+				<div id="right-navigation">
+										<div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+						<h3 id="p-views-label">Visite</h3>
+						<ul>
+															<li id="ca-view" class="selected"><span><a href="/wiki/US_0995" >Leggi</a></span></li>
+															<li id="ca-edit"><span><a href="/w/index.php?title=US_0995&amp;action=edit"  title="Puoi modificare questa pagina. Per favore usa il pulsante di anteprima prima di salvare [e]" accesskey="e">Modifica</a></span></li>
+															<li id="ca-history" class="collapsible"><span><a href="/w/index.php?title=US_0995&amp;action=history"  title="Versioni precedenti di questa pagina [h]" accesskey="h">Cronologia</a></span></li>
+															<li id="ca-unwatch" class="icon"><span><a href="/w/index.php?title=US_0995&amp;action=unwatch&amp;token=bfaef193a9f7810300e3eb51cbdddb9059fd8d22%2B%5C"  title="Elimina questa pagina dalla tua lista degli osservati speciali [w]" accesskey="w">Non seguire</a></span></li>
+													</ul>
+					</div>
+										<div id="p-cactions" role="navigation" class="vectorMenu" aria-labelledby="p-cactions-label">
+						<h3 id="p-cactions-label"><span>Altro</span><a href="#"></a></h3>
+
+						<div class="menu">
+							<ul>
+																	<li id="ca-move">
+										<a href="/wiki/Speciale:Sposta/US_0995"  title="Sposta questa pagina (cambia titolo) [m]" accesskey="m">Sposta</a>
+									</li>
+																	<li id="ca-purge">
+										<a href="/w/index.php?title=US_0995&amp;action=purge" >Aggiorna</a>
+									</li>
+															</ul>
+						</div>
+					</div>
+										<div id="p-search" role="search">
+						<h3>
+							<label for="searchInput">Ricerca</label>
+						</h3>
+
+						<form action="/w/index.php" id="searchform">
+														<div id="simpleSearch">
+															<input type="search" name="search" placeholder="Ricerca" title="Cerca all'interno di Uomini e cose a Vignale [f]" accesskey="f" id="searchInput" /><input type="hidden" value="Speciale:Ricerca" name="title" /><input type="submit" name="fulltext" value="Ricerca" title="Cerca il testo indicato nelle pagine" id="mw-searchButton" class="searchButton mw-fallbackSearchButton" /><input type="submit" name="go" value="Vai" title="Vai a una pagina con il titolo indicato, se esiste" id="searchButton" class="searchButton" />								</div>
+						</form>
+					</div>
+									</div>
+			</div>
+			<div id="mw-panel">
+				<div id="p-logo" role="banner"><a class="mw-wiki-logo" href="/wiki/Pagina_principale"  title="Visita la pagina principale"></a></div>
+						<div class="portal" role="navigation" id='p-Wiki' aria-labelledby='p-Wiki-label'>
+			<h3 id='p-Wiki-label'>Wiki</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-mainpage"><a href="/wiki/Pagina_principale" title="Visita la pagina principale [z]" accesskey="z">Pagina principale</a></li>
+													<li id="n-recentchanges"><a href="/wiki/Speciale:UltimeModifiche" title="Elenco delle ultime modifiche del sito [r]" accesskey="r">Ultime modifiche</a></li>
+													<li id="n-Temi-e-problemi"><a href="/wiki/Temi_e_problemi">Temi e problemi</a></li>
+													<li id="n-Bibliografia"><a href="/wiki/Bibliografia">Bibliografia</a></li>
+													<li id="n-Sito-Web"><a href="/wiki/Sitoweb">Sito Web</a></li>
+													<li id="n-help"><a href="https://www.mediawiki.org/wiki/Special:MyLanguage/Help:Contents" title="Pagine di aiuto">Aiuto</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-Laboratori' aria-labelledby='p-Laboratori-label'>
+			<h3 id='p-Laboratori-label'>Laboratori</h3>
+
+			<div class="body">
+									<ul>
+													<li id="n-Documentazione-grafica"><a href="/wiki/Grafica">Documentazione grafica</a></li>
+													<li id="n-Schede-US"><a href="/wiki/Schede_US">Schede US</a></li>
+													<li id="n-Diari-di-scavo"><a href="/wiki/Diari_di_scavo">Diari di scavo</a></li>
+													<li id="n-Foto"><a href="/wiki/Foto">Foto</a></li>
+													<li id="n-Video"><a href="/wiki/Video">Video</a></li>
+													<li id="n-Materiali"><a href="/wiki/Materiali">Materiali</a></li>
+													<li id="n-Procedure"><a href="/wiki/Categoria:Procedure">Procedure</a></li>
+											</ul>
+							</div>
+		</div>
+			<div class="portal" role="navigation" id='p-tb' aria-labelledby='p-tb-label'>
+			<h3 id='p-tb-label'>Strumenti</h3>
+
+			<div class="body">
+									<ul>
+													<li id="t-whatlinkshere"><a href="/wiki/Speciale:PuntanoQui/US_0995" title="Elenco di tutte le pagine che sono collegate a questa [j]" accesskey="j">Puntano qui</a></li>
+													<li id="t-recentchangeslinked"><a href="/wiki/Speciale:ModificheCorrelate/US_0995" title="Elenco delle ultime modifiche alle pagine collegate a questa [k]" accesskey="k">Modifiche correlate</a></li>
+													<li id="t-upload"><a href="/wiki/Speciale:Carica" title="Carica file multimediali [u]" accesskey="u">Carica un file</a></li>
+													<li id="t-specialpages"><a href="/wiki/Speciale:PagineSpeciali" title="Elenco di tutte le pagine speciali [q]" accesskey="q">Pagine speciali</a></li>
+													<li id="t-print"><a href="/w/index.php?title=US_0995&amp;printable=yes" rel="alternate" title="Versione stampabile di questa pagina [p]" accesskey="p">Versione stampabile</a></li>
+													<li id="t-permalink"><a href="/w/index.php?title=US_0995&amp;oldid=11781" title="Collegamento permanente a questa versione della pagina">Link permanente</a></li>
+													<li id="t-info"><a href="/w/index.php?title=US_0995&amp;action=info" title="Ulteriori informazioni su questa pagina">Informazioni sulla pagina</a></li>
+													<li id="t-smwbrowselink"><a href="/wiki/Speciale:Esplora/US_0995" rel="smw-browse">Sfoglia le proprietà</a></li>
+											</ul>
+							</div>
+		</div>
+				</div>
+		</div>
+		<div id="footer" role="contentinfo">
+							<ul id="footer-info">
+											<li id="footer-info-lastmod"> Questa pagina è stata modificata per l'ultima volta il 4 nov 2017 alle 10:18.</li>
+											<li id="footer-info-copyright">Il contenuto è disponibile in base alla licenza <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribuzione-Condividi allo stesso modo</a>, se non diversamente specificato.</li>
+									</ul>
+							<ul id="footer-places">
+											<li id="footer-places-privacy"><a href="/wiki/Uomini_e_cose_a_Vignale:Informazioni_sulla_privacy" title="Uomini e cose a Vignale:Informazioni sulla privacy">Informazioni sulla privacy</a></li>
+											<li id="footer-places-about"><a href="/wiki/Uomini_e_cose_a_Vignale:Informazioni" title="Uomini e cose a Vignale:Informazioni">Informazioni su Uomini e cose a Vignale</a></li>
+											<li id="footer-places-disclaimer"><a href="/wiki/Uomini_e_cose_a_Vignale:Avvertenze_generali" title="Uomini e cose a Vignale:Avvertenze generali">Avvertenze</a></li>
+									</ul>
+										<ul id="footer-icons" class="noprint">
+											<li id="footer-copyrightico">
+															<a href="http://creativecommons.org/licenses/by-sa/3.0/"><img src="/w/resources/assets/licenses/cc-by-sa.png" alt="Creative Commons Attribuzione-Condividi allo stesso modo" width="88" height="31" /></a>
+													</li>
+											<li id="footer-poweredbyico">
+															<a href="//www.mediawiki.org/"><img src="/w/resources/assets/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" srcset="/w/resources/assets/poweredby_mediawiki_132x47.png 1.5x, /w/resources/assets/poweredby_mediawiki_176x62.png 2x" width="88" height="31" /></a>
+															<a href="https://www.semantic-mediawiki.org/wiki/Semantic_MediaWiki"><img src="/w/extensions/SemanticMediaWiki/includes/../res/images/smw_button.png" alt="Powered by Semantic MediaWiki" width="88" height="31" /></a>
+													</li>
+									</ul>
+						<div style="clear:both"></div>
+		</div>
+		<script>if(window.jQuery)jQuery.ready();</script><script>if(window.mw){
+mw.loader.state({"site":"loading","user":"ready","user.groups":"ready"});
+}</script>
+<script>if(window.mw){
+mw.loader.load(["ext.smw.tooltips","mediawiki.toc","mediawiki.action.view.postEdit","mediawiki.user","mediawiki.hidpi","mediawiki.page.ready","mediawiki.searchSuggest","mediawiki.page.watch.ajax"],null,true);
+}</script>
+<script>if(window.mw){
+document.write("\u003Cscript src=\"http://vignale.openarchaeology.eu/w/load.php?debug=false\u0026amp;lang=it\u0026amp;modules=site\u0026amp;only=scripts\u0026amp;skin=vector\u0026amp;*\"\u003E\u003C/script\u003E");
+}</script>
+<script>if(window.mw){
+mw.config.set({"wgBackendResponseTime":131});
+}</script>
+	</body>
+</html>

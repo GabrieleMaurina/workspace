@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.bug.BugsTest
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 2, Errors: 10, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in org.apache.commons.cli.bug.BugsTest
+test11456(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -a
+	at org.apache.commons.cli.bug.BugsTest.test11456(BugsTest.java:131)
+
+test11457(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+	at org.apache.commons.cli.bug.BugsTest.test11457(BugsTest.java:56)
+
+test11458(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -DJAVA_HOME=/opt/java
+	at org.apache.commons.cli.bug.BugsTest.test11458(BugsTest.java:70)
+
+test11680(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -f
+	at org.apache.commons.cli.bug.BugsTest.test11680(BugsTest.java:114)
+
+test12210(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: exec option not found
+	at org.apache.commons.cli.bug.BugsTest.test12210(BugsTest.java:199)
+
+test13425(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -o
+	at org.apache.commons.cli.bug.BugsTest.test13425(BugsTest.java:228)
+
+test13666(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: 
+expected:<usage: dir
+ -d[] <arg>   dir
+> but was:<usage: dir
+ -d[asdf] <arg>   dir
+>
+	at org.apache.commons.cli.bug.BugsTest.test13666(BugsTest.java:257)
+
+test13935(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -s
+	at org.apache.commons.cli.bug.BugsTest.test13935(BugsTest.java:303)
+
+test14786(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -test
+	at org.apache.commons.cli.bug.BugsTest.test14786(BugsTest.java:324)
+
+test15046(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -z
+	at org.apache.commons.cli.bug.BugsTest.test15046(BugsTest.java:337)
+
+test15648(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -m
+	at org.apache.commons.cli.bug.BugsTest.test15648(BugsTest.java:354)
+
+test31148(org.apache.commons.cli.bug.BugsTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Default option wasn't defined
+	at org.apache.commons.cli.bug.BugsTest.test31148(BugsTest.java:371)
+

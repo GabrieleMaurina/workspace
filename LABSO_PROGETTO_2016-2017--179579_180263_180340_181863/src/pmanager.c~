@@ -1,0 +1,500 @@
+#include "pmanager.h"
+
+void killOne(process* p)
+{
+	p -> active = 0;
+	kill(p -> pid, SIGTERM);
+}
+
+void killAll(process* p)
+{
+	int i;
+	for(i = 0; i < p -> nClones; i++)
+	{
+		killAll(p -> clones[i]);
+	}
+	killOne(p);
+}
+
+void killShell(process* p)
+{
+	int i;
+	for(i = 0; i < p -> nClones; i++)
+	{
+		killAll(p -> clones[i]);
+	}
+}
+
+void printhelp()
+{
+	printf("Commands:\n");
+    printf("\t- phelp : Fornisce un elenco dei comandi disponibili\n");
+    printf("\t- plist : Elenca i processi generati dalla shell custom\n");
+    printf("\t- pnew <nome> : Crea un nuovo processo con nome <nome>\n");
+    printf("\t- pinfo <nome> : Fornisce informazioni sul processo <nome>\n");
+    printf("\t- pclose <nome> : Chiede al processo <nome> di chiudersi\n");
+    printf("\t- quit: Esce dalla shell custom\n\n");
+    printf("\t- pspawn <nome> : Chiede al processo <nome> di clonarsi creando <nome_i> con i progressivo\n");
+    printf("\t- prmall <nome> : Chiede al processo <nome> di chiudersi chiudendo anche eventuali cloni\n");
+    printf("\t- ptree : Mostra la gerarchia completa dei processi generati attivi\n\n");
+}
+
+int listProcessesAus(process* p)
+{
+	int i;
+	for(i = 0; i < p -> nClones; i++)
+	{
+		process* c = p -> clones[i];
+		printf("Nome: %s\n", c -> name);
+		printf("Pid: %i\n", c -> pid);
+		printf("PPid: %i\n", c -> ppid);
+		if(c -> active == 1)
+		{
+			printf("Status: Running\n");
+		}
+		else
+		{
+			printf("Status: Stopped\n");
+		}
+		printf("\n");
+		listProcessesAus(c);
+	}
+	return p -> nClones;
+}
+
+void updateAllChildren(process* p)
+{
+	int i;
+	int test;
+	for(i = 0; i < p -> nClones; i++)
+	{
+		test = kill(p -> clones[i] -> pid, SIG_UPDATE);
+		p -> clones[i] -> active = (p -> clones[i] -> active && !(-test));
+		updateAllChildren(p -> clones[i]);
+	}
+}
+
+// lista tutto l'array dei processi
+void listProcesses()
+{
+	printf("Lista processi attivi: \n\n");
+	if(!listProcessesAus(shell))
+	{
+		printf("Nessun processo trovato \n\n");
+	}
+}
+
+
+int treeProcessesAus(process* p, int depth)
+{
+	int i;
+	int j;
+	for(i = 0; i < p -> nClones; i++)
+	{
+		for(j = 0; j < depth; j++)
+		{
+			printf("\t");	
+		}
+		process* c = p -> clones[i];
+		printf("%s (%s)\n", c -> name, (c -> active) ? "running" : "stopped");
+		treeProcessesAus(c, depth + 1);
+	}
+	return p -> nClones;
+}
+
+void treeProcesses()
+{
+	printf("Albero processi attivi: \n\n");
+	if(!treeProcessesAus(shell, 0))
+	{
+		printf("Nessun processo trovato \n");
+	}
+	printf("\n");
+}
+
+process* findProcessByName(char* name, process* p)
+{
+	int i;
+	for(i = 0; i < p -> nClones; i++)
+	{
+		process* toRtn = findProcessByName(name, p -> clones[i]);
+		if(toRtn != NULL)
+		{
+			return toRtn;
+		}
+	}
+	if(strcmp(p -> name,name) == 0)
+	{
+		return p;
+	}
+	return NULL;
+}
+
+int readLine (int fd, char *str)
+{
+	/* Read a single '\0'-terminated line into str from fd */
+	/* Return 0 when the end-of-input is reached and 1 otherwise */
+	int n;
+	do
+	{ /* Read characters until '\0' or end-of-input */
+		n = read (fd, str, 1); /* Read one character */
+	} while (n > 0 && *str++ != '\0');
+	return (n > 0); /* Return false if end-of-input */
+}
+
+void spawnNew(char* name)
+{
+	if(name != NULL)
+	{
+		process* p = findProcessByName(name, shell);
+		if(p != NULL)
+		{
+			if(p -> active != 0)
+			{
+				int fd;
+				char str[100];
+				unlink("aPipe"); /* Remove named pipe if it already exists */
+				mknod ("aPipe", S_IFIFO, 0); /* Create named pipe */
+				chmod ("aPipe", S_IRWXU | S_IRWXG | S_IRWXO); /* Change its permissions */
+				kill(p -> pid, SIG_SPAWN);
+				strcpy(str,"");
+				fd = open("aPipe", O_RDONLY);
+				while(!strlen(str))
+				{
+					printf("REEEE\n");
+					readLine(fd, str);
+				}
+				int pid = atoi(str);
+				printf("%i\n",pid);
+				close (fd); /* Close pipe */
+				unlink("aPipe"); /* Remove used pipe */
+				process* c = malloc(sizeof(process));
+				char buffer1[100];
+				char buffer2[100];
+				sprintf(buffer1,"_%d",p -> nClones + 1); 
+				strcpy(buffer2,p -> name);
+				strcat(buffer2,buffer1);
+				c -> name = strdup(buffer2);
+	  			c -> pid = pid;
+	  			c -> ppid = p -> pid;
+				c -> dimArr = 2;
+				c -> nClones = 0;
+				c -> active = 1;
+				c -> clones = malloc(sizeof(process*) * c -> dimArr);
+	  			p -> clones[p -> nClones] = c;
+				p -> nClones++;
+				printf("Processo creato di nome \"%s\"\n",c -> name);
+			}
+			else
+			{
+				printf("Il processo selezionato e' gia stato chiuso\n");
+			}
+		}
+		else
+		{
+			printf("Processo non trovato\n");
+		}
+	}
+	else
+	{
+		printf("Nome inserito invalido\n");
+	}
+	printf("\n");
+}
+
+// crea nuovo processo e aggiorna array processi (il processo figlio e' messo a dormire per sempre)
+void newProcess(char* name)
+{
+	if(name != NULL)
+	{
+		if(findProcessByName(name, shell) == NULL)
+		{
+		  	pid_t testPid = fork();
+		  	if(testPid >= 0)
+			{
+				if(testPid == 0)
+				{
+					execve("pchild",NULL,NULL);
+				}
+				else
+				{
+					int fd;
+					char str[100];
+					unlink("aPipe");
+					mknod ("aPipe", S_IFIFO, 0);
+					chmod ("aPipe", S_IRWXU | S_IRWXG | S_IRWXO);
+					strcpy(str,"");
+					fd = open("aPipe", O_RDONLY);
+					while(!strlen(str))
+					{
+						readLine(fd, str);
+					}
+					close (fd);
+					unlink("aPipe");
+		  			if(shell -> nClones >= shell -> dimArr)
+					{
+		  				shell -> dimArr = shell -> dimArr * 2;
+		  				shell -> clones = realloc(shell -> clones, sizeof(process*) * shell -> dimArr);
+		  			}
+		  			process* p = malloc(sizeof(process));
+					p -> name = strdup(name);
+		  			p -> pid = testPid;
+		  			p -> ppid = getpid();
+					p -> dimArr = 2;
+					p -> nClones = 0;
+					p -> active = 1;
+					p -> clones = malloc(sizeof(process*) * p -> dimArr);
+		  			shell -> clones[shell -> nClones] = p;
+					shell -> nClones++;
+					printf("Processo creato di nome \"%s\"\n",name);
+		  		}
+		  	}
+			else
+			{
+		  		printf("Creazione processo fallita\n");
+		  	}
+		}
+		else
+		{
+			printf("Esiste già un processo di nome \"%s\"\n",name);
+		}
+	}
+	else
+	{
+		printf("Nome inserito invalido\n");
+	}
+	printf("\n");
+}
+
+void removeAll(char* name)
+{
+	if(name != NULL)
+	{
+		process* p = findProcessByName(name, shell);
+		if(p != NULL)
+		{
+			killAll(p);
+			printf("Processo/i chiuso/i correttamente\n");
+		}
+		else
+		{
+			printf("Il nome inserito non e' un processo\n");
+		}
+	}
+	else
+	{
+		printf("Nome processo invalido\n");
+	}
+	printf("\n");
+}
+
+void closeProcess(char* name)
+{
+	if(name != NULL)
+	{
+		process* p = findProcessByName(name, shell);
+		if(p != NULL)
+		{
+			if(p -> active != 0)
+			{
+				killOne(p);
+				printf("Processo chiuso correttamente\n");
+			}
+			else
+			{
+				printf("Il processo e' gia stato chiuso");
+			}
+		}
+		else
+		{
+			printf("Il nome inserito non e' un processo\n");
+		}
+	}
+	else
+	{
+		printf("Nome processo invalido\n");
+	}
+	printf("\n");
+}
+
+void info(char* name)
+{
+	if(name != NULL)
+	{
+		process* p = findProcessByName(name, shell);
+		if(p != NULL)
+		{
+			printf("\n\tNome processo: \"%s\"\n\tPID: %d\n\tPPID: %d\n\n", p -> name, p -> pid, p -> ppid);
+		}
+		else
+		{
+			printf("Il nome inserito non e' un processo\n");
+		}
+	}
+	else
+	{
+		printf("Nome processo invalido\n");
+	}
+	printf("\n");
+}
+
+int execute(char** args)
+{
+	printf("kkk%skkk%skkk\n",args[0],args[1]);
+    if (args[0] == NULL)
+	{
+    	printf("Inserisci un comando (phelp per la lista completa dei comandi)\n");
+    }
+    else if(strcmp(args[0],"quit") == 0)
+	{
+		killShell(shell);
+        return 0;
+    }
+    else if(strcmp(args[0],"phelp") == 0)
+	{
+        printhelp();
+    }
+	else if(strcmp(args[0],"plist") == 0)
+	{
+		listProcesses();
+	}
+	else if(strcmp(args[0],"ptree") == 0)
+	{
+		treeProcesses();
+	}
+	else if(strcmp(args[0],"pnew") == 0)
+	{
+		newProcess(args[1]);
+	}
+	else if(strcmp(args[0],"pclose") == 0)
+	{
+	  	closeProcess(args[1]);
+	}
+	else if(strcmp(args[0],"pinfo")== 0)
+	{
+		info(args[1]);
+	}
+	else if(strcmp(args[0],"prmall")== 0)
+	{
+		removeAll(args[1]);
+	}
+	else if(strcmp(args[0],"pspawn")== 0)
+	{
+		spawnNew(args[1]);
+	}
+	else
+	{
+		printf("Comando inesistente o non supportato (phelp per la lista completa dei comandi)\n\n");
+	}
+    return 1;
+}
+
+// divides a string by spaces and newlines
+char** splitline(char* line)
+{
+    int bufsize = 10;
+    int index = 0;
+    char **tokens = malloc(bufsize * sizeof(char*));
+    char *temp;
+
+    temp = strtok(line, " \n");
+    
+    while (temp != NULL)
+	{
+    	tokens[index] = temp;
+     	index++;
+        temp = strtok(NULL, " \n");
+    }
+	tokens[index] = NULL;
+	int i = 0;
+	while(i < index)
+	{
+	  	i++;
+	}
+	return tokens;
+}
+
+// reads a line from the console
+char* readcommand()
+{
+    char* buffer = NULL;
+    ssize_t buffsize = 0;
+    
+    printf("Enter a command: ");
+    getline(&buffer, &buffsize, stdin);
+    return buffer;
+}
+
+// loop function to read and interpret commands
+void loop()
+{
+    char *line;
+    char **args;
+    int status = 1;
+    while(status)
+	{
+		line = readcommand();
+		args = splitline(line);
+		updateAllChildren(shell);
+		status = execute(args);
+		free(line);
+		free(args);
+    }
+}
+
+void initShell()
+{
+	signal(SIGCHLD, SIG_IGN);
+	shell = malloc(sizeof(process));
+	shell -> dimArr = 2;
+	shell -> clones = malloc(sizeof(process*) * shell -> dimArr);
+	shell -> name = "";
+	shell -> pid = getpid();
+	shell -> ppid = getppid();
+	shell -> nClones = 0;
+	shell -> active = 1;
+}
+
+void test(int argc, char** argv)
+{
+	if(argc > 1)
+	{
+		char** args;
+		int status = 1;
+		FILE* f;
+		char buffer[100];
+		char bufAus[10];
+		printf("%s\n",argv[1]);
+		//f = fopen("../giovanni", "w");
+		f = fopen(argv[1], "r");
+		if(f != NULL)
+		{
+			while(fgets(buffer, sizeof buffer, f) != NULL)
+			{
+				printf("Istruzione letta: %s\n",buffer);
+				args = splitline(buffer);
+				updateAllChildren(shell);
+				status = execute(args);
+				free(args);
+				if(status == 0)
+				{
+					exit(0);
+				}
+			}
+			fclose(f);
+		}
+		else
+		{
+			printf("Il percorso del file di testo inserito e' invalido\n");
+		}
+	}
+}
+
+int main(int argc, char** argv)
+{
+	initShell();
+	test(argc,argv);
+	loop();
+    
+    return 0;
+}

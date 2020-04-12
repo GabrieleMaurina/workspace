@@ -1,0 +1,148 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.commons.cli.DefaultParserTest
+-------------------------------------------------------------------------------
+Tests run: 58, Failures: 9, Errors: 39, Skipped: 0, Time elapsed: 0.003 sec <<< FAILURE! - in org.apache.commons.cli.DefaultParserTest
+testSimpleLong(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testSimpleShort(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -a
+
+testStopBursting2(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Confirm -c is set
+
+testMissingRequiredOption(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected to catch MissingOptionException
+
+testShortWithoutEqual(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -fbar
+
+testReuseOptionsTwice(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -v
+
+testMissingRequiredGroup(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Expected to catch MissingOptionException
+
+testOptionGroupLong(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testAmbiguousLongWithoutEqualSingleDash(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -b
+
+testMissingArgWithBursting(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -acb
+
+testMissingRequiredOptions(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: expected to catch MissingOptionException
+
+testPropertyOverrideValues(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -j
+
+testNegativeArgument(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -b
+
+testStopBursting(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Confirm -a is set
+
+testStopAtUnexpectedArg(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Confirm -c is set
+
+testPartialLongOptionSingleDash(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -ver
+
+testOptionGroup(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -b
+
+testLongWithoutEqualSingleDash(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -foobar
+
+testPropertyOptionSingularValue(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Default option wasn't defined
+
+testPropertyOptionMultipleValues(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Default option wasn't defined
+
+testMissingArg(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -b
+
+testPropertyOptionFlags(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Default option wasn't defined
+
+testPropertyOptionGroup(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -a
+
+testMultipleWithLong(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testUnrecognizedOption(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<-[d]> but was:<-[a]>
+
+testBursting(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -acbtoast
+
+testAmbiguousPartialLongOption2(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -ver
+
+testSingleDash(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testShortWithEqual(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -f=bar
+
+testWithRequiredOption(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -b
+
+testUnlimitedArgs(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -e
+
+testNegativeOption(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -b
+
+testPropertyOptionRequired(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Default option wasn't defined
+
+testOptionAndRequiredOption(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -a
+
+testLongWithEqualDoubleDash(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testLongWithUnexpectedArgument1(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testLongWithEqualSingleDash(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testUnambiguousPartialLongOption1(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testUnambiguousPartialLongOption2(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -ver
+
+testUnambiguousPartialLongOption3(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testUnambiguousPartialLongOption4(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testMultiple(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Confirm -c is set
+
+testArgumentStartingWithHyphen(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -b
+
+testPropertiesOption1(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -Jsource=1.5
+
+testPropertiesOption2(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -Dparam1
+
+testDoubleDash1(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+java.lang.NullPointerException
+
+testDoubleDash2(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< ERROR!
+org.apache.commons.cli.UnrecognizedOptionException: Unrecognized option: -n
+
+testStopAtExpectedArg(org.apache.commons.cli.DefaultParserTest)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: Confirm -b is set
+
