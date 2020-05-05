@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-cp -r ~/workspace/dext ./
-cp setup.py dext/
+#cp -r ~/workspace/fasttp ./
+mkdir fasttp
+echo 'import dext' > fasttp/fasttp.py
+cp setup.py fasttp/
 
-cd dext
+cd fasttp
 	python -m pip install --upgrade twine setuptools wheel --user
 	python setup.py sdist bdist_wheel
 	python -m twine upload dist/*
 cd ..
 
-rm -rf dext
+rm -rf fasttp

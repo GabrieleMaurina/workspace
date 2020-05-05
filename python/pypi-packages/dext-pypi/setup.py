@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
 	name='dext',
-	version='1.0.3',
+	version='1.0.5',
 	author='Gabriele Maurina',
 	author_email='gabrielemaurina95@gmail.com',
 	description='Dext is a tool to extract file dependencies from a code base.',

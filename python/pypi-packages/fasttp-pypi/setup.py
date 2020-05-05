@@ -4,16 +4,17 @@ import setuptools
 #	long_description = fh.read()
 
 setuptools.setup(
-	name='derts',
+	name='fasttp',
 	version='0.0.1',
 	author='Gabriele Maurina',
 	author_email='gabrielemaurina95@gmail.com',
-	description='Derts is a tool to perform regression test selection.',
-	#long_description=long_description,
-	#long_description_content_type='text/markdown',
-	url='https://github.com/GabrieleMaurina/fastRTS',
+	description='Fasttp is a tool to perform test case prioritization.',
+#	long_description=long_description,
+#	long_description_content_type='text/markdown',
+	url='https://github.com/GabrieleMaurina/fasttp',
 	licence='MIT',
-	py_modules=['derts'],
+	py_modules=['fasttp'],
+	install_requires=['dext'],
 	classifiers=[
 		'Programming Language :: Python :: 3',
 		'License :: OSI Approved :: MIT License',

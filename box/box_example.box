@@ -1,0 +1,8 @@
+b = {
+	asdf:1324
+	qwer:'qwer'
+}
+
+b.asdf #1234
+b.qwer #qwer
+

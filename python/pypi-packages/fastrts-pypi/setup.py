@@ -5,13 +5,13 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
 	name='fastrts',
-	version='1.0.4',
+	version='1.0.5',
 	author='Gabriele Maurina',
 	author_email='gabrielemaurina95@gmail.com',
 	description='Fastrts is a tool to perform regression test selection.',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
-	url='https://github.com/GabrieleMaurina/fastRTS',
+	url='https://github.com/GabrieleMaurina/fastrts',
 	licence='MIT',
 	py_modules=['fastrts'],
 	install_requires=['dext'],
