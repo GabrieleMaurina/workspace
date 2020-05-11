@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-cp -r ~/workspace/dext ./
+mkdir dext
+cp ~/workspace/dext/dext.py dext/
+cp ~/workspace/dext/README.md dext/
 cp setup.py dext/
 
 cd dext

@@ -1,0 +1,18 @@
+car()= {
+	wheels = 4
+	engines = 1
+	max_speed = 100.0
+	return self
+}
+
+my_car = car()
+
+boat() = {
+	return {
+		wheels = 0
+		engines = 2
+		max_speed = 20.0
+	}
+}
+
+my_boat = boat()

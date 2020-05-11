@@ -4,17 +4,16 @@ with open('README.md', 'r') as fh:
 	long_description = fh.read()
 
 setuptools.setup(
-	name='fastrts',
-	version='1.0.5',
+	name='pyssembly',
+	version='1.0.2',
 	author='Gabriele Maurina',
 	author_email='gabrielemaurina95@gmail.com',
-	description='Fastrts is a tool to perform regression test selection.',
+	description='Pyssembly allows to execute pseudo assembly code and it is meant for teaching purposes.',
 	long_description=long_description,
 	long_description_content_type='text/markdown',
-	url='https://github.com/GabrieleMaurina/fastrts',
+	url='https://github.com/GabrieleMaurina/pyssembly',
 	licence='MIT',
-	py_modules=['fastrts'],
-	install_requires=['dext'],
+	py_modules=['pyssembly'],
 	classifiers=[
 		'Programming Language :: Python :: 3',
 		'License :: OSI Approved :: MIT License',

@@ -1,0 +1,7 @@
+square(v) = v * v
+
+square(5) #25
+
+pow(a) = square(a)
+
+pow(a, b) = a ** b
