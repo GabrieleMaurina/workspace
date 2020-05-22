@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
 	name='pyssembly',
-	version='1.0.2',
+	version='1.0.5',
 	author='Gabriele Maurina',
 	author_email='gabrielemaurina95@gmail.com',
 	description='Pyssembly allows to execute pseudo assembly code and it is meant for teaching purposes.',
