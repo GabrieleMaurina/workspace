@@ -1,0 +1,13 @@
+#!/usr/bin/env python
+
+# Copyright 2020 by Gabriele Maurina, Università degli Studi di Milano.
+# All rights reserved.
+# This file is released under the "MIT License Agreement".
+
+from sys import argv
+
+with open(argv[1], 'r') as f:
+	print('opened')
+	res = f.readlines()
+	print('read')
+	print(res[-10:])

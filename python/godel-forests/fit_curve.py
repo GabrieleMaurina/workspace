@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+
+# Copyright 2020 by Gabriele Maurina, Università degli Studi di Milano.
+# All rights reserved.
+# This file is released under the "MIT License Agreement".
+
 import numpy as np
 from scipy.optimize import curve_fit as fit
 import matplotlib.pyplot as plt

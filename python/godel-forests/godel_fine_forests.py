@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
 
+# Copyright 2020 by Gabriele Maurina, Università degli Studi di Milano.
+# All rights reserved.
+# This file is released under the "MIT License Agreement".
+
 from argparse import ArgumentParser as arg_par
 from itertools import product
 from functools import reduce
