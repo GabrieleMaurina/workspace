@@ -21,7 +21,6 @@ def fine(K, C=1):
 			f[k] = f[k-1] + sum(reduce(mul, map(lambda v:f[v-1], mp)) for mp in mps)
 			yield k, f[k]
 
-
 def main(K, C=1):
 	with open('fine.csv', 'w') as out:
 		out.write('K,Fine(K)\n')
