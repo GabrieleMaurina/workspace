@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/extreme-voxel.dir/main.cpp.o CMakeFiles/extreme-voxel.dir/home/gabriele/workspace/glfw/deps/glad_gl.c.o  -o extreme-voxel  glfw/src/libglfw3.a -lpthread /usr/lib64/librt.so -lm -ldl /usr/lib64/libGLX.so /usr/lib64/libOpenGL.so 

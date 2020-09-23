@@ -1,0 +1,1 @@
+cmake . && make && ./extreme-voxel
