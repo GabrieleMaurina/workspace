@@ -8,13 +8,10 @@ class PixelImages:
 	def __init__(self, pi):
 		self.pi = pi
 		self.l = len(pi)
-		self.cache = {}
 
 	def get_image(self, c):
 		i = rr(self.l)
-		key = (i, c)
-		if key not in self.cache: self.cache[key] = self.change_color(self.pi[i], c)
-		return self.cache[key]
+		return self.change_color(self.pi[i], c)
 
 	def t(self, a, b):
 		return int(a * b / 255)
