@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import sys
 from PIL import Image, ImageDraw, ImageFont
 import bisect
