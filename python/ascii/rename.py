@@ -10,7 +10,7 @@ def main():
 		for name in files:
 			ext = name.rsplit('.', 1)[-1]
 			old = join(root, name)
-			new = join(root, f'{i:03d}.{ext}')
+			new = join(root, f'{argv[2] if len(argv) > 2 else ""}{i:03d}.{ext}')
 			rename(old, new)
 			i += 1
 
