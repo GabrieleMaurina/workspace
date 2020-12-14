@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.commons.cli.bug.BugCLI252Test
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.002 sec <<< FAILURE! - in org.apache.commons.cli.bug.BugCLI252Test
-testExactOptionNameMatch(org.apache.commons.cli.bug.BugCLI252Test)  Time elapsed: 0 sec  <<< ERROR!
-java.lang.NullPointerException
-	at org.apache.commons.cli.bug.BugCLI252Test.testExactOptionNameMatch(BugCLI252Test.java:31)
-
