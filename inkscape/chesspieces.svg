@@ -18,6 +18,18 @@
   <defs
      id="defs2">
     <rect
+       x="29"
+       y="400"
+       width="5"
+       height="11"
+       id="rect1185" />
+    <rect
+       x="23"
+       y="397"
+       width="7"
+       height="28"
+       id="rect1179" />
+    <rect
        x="-35"
        y="397.00001"
        width="20"
@@ -43,9 +55,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50000001"
-     inkscape:cx="467.5946"
-     inkscape:cy="4415.6526"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="164.23219"
+     inkscape:cy="1604.4641"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -71,7 +83,7 @@
        opacity="0.16862745"
        empcolor="#613fff"
        empopacity="0.31764706"
-       enabled="false"
+       enabled="true"
        visible="true"
        snapvisiblegridlinesonly="true" />
   </sodipodi:namedview>
@@ -180,30 +192,30 @@
     <image
        sodipodi:absref="/home/gabriele/workspace/misc/inkscape/ref1.jpg"
        xlink:href="ref1.jpg"
-       width="164.34163"
-       height="164.44438"
-       preserveAspectRatio="none"
-       id="image995"
+       y="-463"
        x="200"
-       y="-463" />
+       id="image995"
+       preserveAspectRatio="none"
+       height="164.44438"
+       width="164.34163" />
     <image
        sodipodi:absref="/home/gabriele/workspace/misc/inkscape/ref2.jpg"
        xlink:href="ref2.jpg"
-       width="154.99998"
-       height="92.999992"
-       preserveAspectRatio="none"
-       id="image1009"
+       y="-433"
        x="390"
-       y="-433" />
+       id="image1009"
+       preserveAspectRatio="none"
+       height="92.999992"
+       width="154.99998" />
     <image
        sodipodi:absref="/home/gabriele/workspace/misc/inkscape/ref3.jpg"
        xlink:href="ref3.jpg"
-       width="178.79999"
-       height="91.770447"
-       preserveAspectRatio="none"
-       id="image1023"
+       y="-434.77045"
        x="-38.799988"
-       y="-434.77045" />
+       id="image1023"
+       preserveAspectRatio="none"
+       height="91.770447"
+       width="178.79999" />
     <g
        id="g972"
        transform="translate(-4.9967648,2.9323387)">
@@ -1851,5 +1863,37 @@
              style="font-size:10px;stroke-width:0.264583">1</tspan></text>
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       id="text1177"
+       style="font-size:2px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1179);"
+       transform="translate(2.6233179,2.5982932)"><tspan
+         x="23"
+         y="398.76953"><tspan>12
+</tspan></tspan><tspan
+         x="23"
+         y="401.26953"><tspan>27
+</tspan></tspan><tspan
+         x="23"
+         y="403.76953"><tspan>42
+</tspan></tspan><tspan
+         x="23"
+         y="406.26953"><tspan>47</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1183"
+       style="font-size:2px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect1185);"
+       transform="translate(-3.5830009,11.245252)"><tspan
+         x="29"
+         y="401.76953"><tspan>14
+</tspan></tspan><tspan
+         x="29"
+         y="404.26953"><tspan>29
+</tspan></tspan><tspan
+         x="29"
+         y="406.76953"><tspan>42
+</tspan></tspan><tspan
+         x="29"
+         y="409.26953"><tspan>47</tspan></tspan></text>
   </g>
 </svg>
