@@ -10,25 +10,36 @@ K = int(argv[2])
 points = np.random.random_sample(size=(N,2))
 queries = np.random.random_sample(size=(K,2))
 
-t1 = t()
-for i in range(N):
-	qtree = cKDTree(points[:i+1])
-print(t()-t1)
+def test(f,m):
+	t1 = t()
+	f()
+	print(m,t()-t1)
 
-t1 = t()
-for p in queries:
-	qtree.query(p)
-print(t()-t1)
+def ckd():
+	global qtree
+	for i in range(N):
+		qtree = cKDTree(points[:i+1])
+
+def qckd():
+	for p in queries:
+		qtree.query(p)
 
 rtree = Index()
-d = 0.01
+def rt():
+	for i,(x,y) in enumerate(points):
+		rtree.insert(i,(x,y,x,y))
 
-t1 = t()
-for i,(x,y) in enumerate(points):
-	rtree.insert(i,(x-d,y+d,x+d,y+d))
-print(t()-t1)
+d = 0.1
+def qrt():
+	for x,y in queries:
+		list(rtree.intersection((x-d,y-d,x+d,y+d)))
 
-t1 = t()
-for x,y in queries:
-	list(rtree.intersection((x-d,y-d,x+d,y+d)))
-print(t()-t1)
+def qnv():	
+	for x1,y1 in queries:
+		min(max(abs(x1-x2),abs(y1-y2)) for x2,y2 in points)
+
+test(ckd,'ckdtree')
+test(qckd,'ckdtree query')
+test(rt,'rtree')
+test(qrt,'rtree query')
+test(qnv,'naive query')
