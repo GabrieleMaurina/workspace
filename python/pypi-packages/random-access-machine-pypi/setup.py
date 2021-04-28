@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
 	name='random-access-machine',
-	version='1.0.0',
+	version='1.0.1',
 	author='Gabriele Maurina',
 	author_email='gabrielemaurina95@gmail.com',
 	description='Random Access Machine implemented in python.',
