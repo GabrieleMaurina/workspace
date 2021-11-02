@@ -1,5 +1,5 @@
 import numpy as np
-from numba import njit
+import numba as nb
 from time import time
 from sys import argv
 
@@ -9,16 +9,14 @@ K = int(argv[2])
 def rank(a,k):
     return np.sum(a[:k])
 
-def naive_select(a,k):
+@nb.guvectorize([(nb.types.b1[:],nb.types.int64,nb.types.int64[:])],'(n),()->()')
+def select(a,k,res):
     tot = 0
-    i = -1
+    res[0] = -1
     for v in a:
-        i+=1
-        tot+=v
+        res[0] += 1
+        tot += v
         if tot>=k: break
-    return i
-
-select = njit(naive_select)
 
 def t(f,*args):
     t1 = time()
@@ -27,8 +25,8 @@ def t(f,*args):
     print(f'{f.__name__} time: {t2-t1}')
     return v
 
-a = np.random.choice(a=(True,False),size=(N,))
+#a = np.random.choice(a=(True,False),size=(N,))
+a = np.empty(shape=(N,),dtype=np.bool_)
 
 print(t(rank,a,K))
 print(t(select,a,K))
-print(t(naive_select,a,K))
