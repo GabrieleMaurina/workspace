@@ -15,7 +15,7 @@ cmd.append('-w')
 cmd.append('-n ExcelMaps')
 cmd.append('--icon=icon.ico')
 cmd.append(f'--key={key}')
-cmd.append('.excelmaps.py')
+cmd.append('excelmaps.py')
 
 system(' '.join(cmd))
 

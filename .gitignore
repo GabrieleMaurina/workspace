@@ -3,3 +3,5 @@ python/ascii/poster*
 python/ascii/images
 *.png
 *.raw
+python/excelmaps/dist
+python/excelmaps/res.xlsx
