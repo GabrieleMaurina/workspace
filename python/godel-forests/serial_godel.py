@@ -1,4 +1,3 @@
-from sys import argv
 from sympy.ntheory import factorint
 from sympy.utilities.iterables import multiset_partitions
 from itertools import count
