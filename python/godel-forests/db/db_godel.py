@@ -9,12 +9,10 @@ def multpart(k):
 
 def main():
     f = DB('fine.db')
-    if f.size < 2:
-        f.append(1)
+    while f.size < 2:
         f.append(1)
     for k in count(start=f.size):
-        mps = multpart(k)
-        f.append(f.get(k-1) + sum(prod(map(lambda v:f.get(v-1), mp)) for mp in mps))
+        f.append(f.get(k-1) + sum(prod(map(lambda v:f.get(v-1), mp)) for mp in multpart(k)))
 
 if __name__ == '__main__':
     main()
