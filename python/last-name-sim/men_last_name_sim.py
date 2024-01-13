@@ -5,6 +5,7 @@ POP_SIZE = 1000000
 LAST_NAMES = 1000
 MAX_YEAR = 10000
 PLOT = 'last_names.pdf'
+PLOT_COUT = 'last_names_count.pdf'
 
 class Person:
     def __init__(self, age, lastName):
@@ -51,7 +52,7 @@ def sim_year(population, lastNames):
     
     diff = len(population) - POP_SIZE
     if diff > 0:
-        for person in r.sample(population, diff):
+        for person in r.sample(tuple(population), diff):
             population.remove(person)
             dead.append(person)
     
@@ -63,6 +64,14 @@ def plot(lastNames):
         plt.plot(lastName, color='blue', linewidth=.5)
     plt.savefig(PLOT)
     plt.close()
+    
+    plt.title('Last Counts')
+    counts = []
+    for yearly in zip(*lastNames):
+        counts.append(sum(1 if v else 0 for v in yearly))
+    plt.plot(counts, color='blue', linewidth=.5)
+    plt.savefig(PLOT_COUT)
+    plt.close()
 
 def main():
     population, lastNames = init_pop()
@@ -70,6 +79,8 @@ def main():
         for year in range(MAX_YEAR):
             births, deaths = sim_year(population, lastNames)
             print(f'Year: {year}, Population: {len(population)}, Births: {births}, Deaths: {deaths}')
+    except KeyboardInterrupt:
+        print('Stopping')
     finally:
         plot(lastNames)
 
